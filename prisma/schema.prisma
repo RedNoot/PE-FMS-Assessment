@@ -1,0 +1,337 @@
+// PE Assessment Platform - Prisma Database Schema
+// Version: 1.0
+// Date: January 1, 2026
+// Based on: TECHNICAL_DESIGN_DOCUMENT.md & DATABASING_AND_STORAGE_STRATEGY.md
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================================
+// CORE MODELS
+// ============================================================================
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  passwordHash String   @map("password_hash")
+  name         String
+  role         UserRole @default(TEACHER)
+  schoolId     String?  @map("school_id")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  school                   School?            @relation(fields: [schoolId], references: [id], onDelete: SetNull)
+  classesAsTeacher         Class[]            @relation("TeacherClasses")
+  assessmentRecordsCreated AssessmentRecord[] @relation("CreatedBy")
+  assessmentRecordsUpdated AssessmentRecord[] @relation("UpdatedBy")
+  imports                  Import[]
+  syncQueue                SyncQueue[]
+  auditLogs                AuditLog[]
+
+  @@index([schoolId])
+  @@map("users")
+}
+
+enum UserRole {
+  TEACHER
+  ADMINISTRATOR
+  PRINCIPAL
+}
+
+model School {
+  id        String   @id @default(uuid())
+  name      String
+  location  String?
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  users              User[]
+  classes            Class[]
+  students           Student[]
+  assessmentPeriods  AssessmentPeriod[]
+  imports            Import[]
+
+  @@map("schools")
+}
+
+model Class {
+  id         String   @id @default(uuid())
+  schoolId   String   @map("school_id")
+  yearLevel  String   @map("year_level")
+  teacherId  String   @map("teacher_id")
+  name       String
+  term       String?
+  year       Int
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  school            School             @relation(fields: [schoolId], references: [id], onDelete: Cascade)
+  teacher           User               @relation("TeacherClasses", fields: [teacherId], references: [id], onDelete: Cascade)
+  students          StudentClass[]
+  assessmentRecords AssessmentRecord[]
+
+  @@index([schoolId])
+  @@index([teacherId])
+  @@index([year, term])
+  @@map("classes")
+}
+
+model Student {
+  id          String   @id @default(uuid())
+  schoolId    String   @map("school_id")
+  name        String
+  dateOfBirth DateTime @map("date_of_birth")
+  gender      Gender
+  yearLevel   String   @map("year_level")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  school            School             @relation(fields: [schoolId], references: [id], onDelete: Cascade)
+  classes           StudentClass[]
+  assessmentRecords AssessmentRecord[]
+
+  @@index([schoolId])
+  @@index([yearLevel])
+  @@map("students")
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  OTHER
+}
+
+// Join table for many-to-many relationship between Students and Classes
+model StudentClass {
+  id        String   @id @default(uuid())
+  studentId String   @map("student_id")
+  classId   String   @map("class_id")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  // Relations
+  student Student @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  class   Class   @relation(fields: [classId], references: [id], onDelete: Cascade)
+
+  @@unique([studentId, classId])
+  @@index([studentId])
+  @@index([classId])
+  @@map("student_classes")
+}
+
+// ============================================================================
+// ASSESSMENT FRAMEWORK
+// ============================================================================
+
+model Assessment {
+  id          String   @id @default(uuid())
+  name        String
+  description String?  @db.Text
+  framework   String   // "Vic FMS", "ASTS", "Routine", "Rock to Stand"
+  active      Boolean  @default(true)
+  version     Int      @default(1)
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  // Relations
+  elements           AssessmentElement[]
+  assessmentRecords  AssessmentRecord[]
+  normativeScores    NormativeScore[]
+
+  @@unique([name, framework])
+  @@index([framework])
+  @@index([active])
+  @@map("assessments")
+}
+
+model AssessmentElement {
+  id           String   @id @default(uuid())
+  assessmentId String   @map("assessment_id")
+  name         String
+  description  String?  @db.Text
+  order        Int
+  createdAt    DateTime @default(now()) @map("created_at")
+
+  // Relations
+  assessment Assessment @relation(fields: [assessmentId], references: [id], onDelete: Cascade)
+
+  @@index([assessmentId])
+  @@index([assessmentId, order])
+  @@map("assessment_elements")
+}
+
+model AssessmentPeriod {
+  id        String             @id @default(uuid())
+  schoolId  String             @map("school_id")
+  name      String
+  startDate DateTime           @map("start_date")
+  endDate   DateTime           @map("end_date")
+  type      AssessmentPeriodType
+  year      Int
+  createdAt DateTime           @default(now()) @map("created_at")
+
+  // Relations
+  school            School             @relation(fields: [schoolId], references: [id], onDelete: Cascade)
+  assessmentRecords AssessmentRecord[]
+
+  @@index([schoolId])
+  @@index([year])
+  @@map("assessment_periods")
+}
+
+enum AssessmentPeriodType {
+  SEMESTER
+  TERM
+  YEAR
+  QUARTER
+}
+
+// ============================================================================
+// ASSESSMENT DATA & RECORDS
+// ============================================================================
+
+model AssessmentRecord {
+  id                      String    @id @default(uuid())
+  studentId               String    @map("student_id")
+  classId                 String    @map("class_id")
+  assessmentId            String    @map("assessment_id")
+  assessmentPeriodId      String    @map("assessment_period_id")
+  
+  // Assessment data
+  elementScores           Json      @map("element_scores") // { "comp1": 1, "comp2": 0, ... }
+  totalScore              Decimal?  @map("total_score") @db.Decimal(10, 2)
+  normativeLevel          String?   @map("normative_level") // "Beginning", "Progressing", "Achieving", "Excelling"
+  notes                   String?   @db.Text
+  
+  // Sync & versioning
+  version                 Int       @default(1)
+  serverVersion           Int       @default(1) @map("server_version")
+  lastSyncedAt            DateTime? @map("last_synced_at")
+  syncStatus              String    @default("synced") @map("sync_status") // 'synced', 'pending', 'failed'
+  
+  // Conflict tracking
+  conflictDetected        Boolean   @default(false) @map("conflict_detected")
+  conflictResolutionNote  String?   @db.Text @map("conflict_resolution_note")
+  
+  // Audit fields
+  createdBy               String    @map("created_by")
+  createdAt               DateTime  @default(now()) @map("created_at")
+  updatedBy               String    @map("updated_by")
+  updatedAt               DateTime  @updatedAt @map("updated_at")
+
+  // Relations
+  student          Student          @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  class            Class            @relation(fields: [classId], references: [id], onDelete: Cascade)
+  assessment       Assessment       @relation(fields: [assessmentId], references: [id], onDelete: Cascade)
+  assessmentPeriod AssessmentPeriod @relation(fields: [assessmentPeriodId], references: [id], onDelete: Cascade)
+  creator          User             @relation("CreatedBy", fields: [createdBy], references: [id], onDelete: Restrict)
+  updater          User             @relation("UpdatedBy", fields: [updatedBy], references: [id], onDelete: Restrict)
+  syncQueue        SyncQueue[]
+
+  @@index([studentId, assessmentId])
+  @@index([classId, assessmentPeriodId])
+  @@index([updatedAt])
+  @@index([syncStatus])
+  @@map("assessment_records")
+}
+
+model NormativeScore {
+  id                     String  @id @default(uuid())
+  assessmentId           String  @map("assessment_id")
+  yearLevel              String  @map("year_level")
+  ageYears               Int?    @map("age_years") // For age-based thresholds (5-12)
+  gender                 Gender? // For gender-specific thresholds (e.g., ASTS)
+  
+  // Threshold values (can be scores or ranges)
+  beginningThreshold     Json    @map("beginning_threshold")     // Can be number, range [min, max], or object
+  progressingThreshold   Json    @map("progressing_threshold")
+  achievingThreshold     Json    @map("achieving_threshold")
+  excellingThreshold     Json    @map("excelling_threshold")
+
+  // Relations
+  assessment Assessment @relation(fields: [assessmentId], references: [id], onDelete: Cascade)
+
+  @@index([assessmentId])
+  @@index([yearLevel])
+  @@index([ageYears])
+  @@map("normative_scores")
+}
+
+// ============================================================================
+// SYNC & OFFLINE SUPPORT
+// ============================================================================
+
+model SyncQueue {
+  id            String    @id @default(uuid())
+  userId        String    @map("user_id")
+  recordId      String    @map("record_id")
+  action        String    // 'create', 'update', 'delete'
+  payload       Json
+  clientVersion Int?      @map("client_version")
+  
+  status        String    @default("pending") // 'pending', 'synced', 'failed'
+  retryCount    Int       @default(0) @map("retry_count")
+  lastError     String?   @db.Text @map("last_error")
+  
+  createdAt     DateTime  @default(now()) @map("created_at")
+  syncedAt      DateTime? @map("synced_at")
+
+  // Relations
+  user   User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  record AssessmentRecord @relation(fields: [recordId], references: [id], onDelete: Cascade)
+
+  @@index([status, userId])
+  @@index([recordId])
+  @@map("sync_queue")
+}
+
+// ============================================================================
+// DATA IMPORT & AUDIT
+// ============================================================================
+
+model Import {
+  id          String   @id @default(uuid())
+  schoolId    String   @map("school_id")
+  importDate  DateTime @default(now()) @map("import_date")
+  fileName    String   @map("file_name")
+  recordCount Int      @map("record_count")
+  status      String   // 'pending', 'completed', 'failed'
+  createdBy   String   @map("created_by")
+
+  // Relations
+  school School @relation(fields: [schoolId], references: [id], onDelete: Cascade)
+  user   User   @relation(fields: [createdBy], references: [id], onDelete: Restrict)
+
+  @@index([schoolId])
+  @@index([importDate])
+  @@map("imports")
+}
+
+model AuditLog {
+  id                String   @id @default(uuid())
+  userId            String   @map("user_id")
+  action            String   // 'create', 'update', 'delete'
+  tableName         String   @map("table_name")
+  recordId          String   @map("record_id")
+  oldValues         Json?    @map("old_values")
+  newValues         Json?    @map("new_values")
+  conflictDetected  Boolean  @default(false) @map("conflict_detected")
+  createdAt         DateTime @default(now()) @map("created_at")
+
+  // Relations
+  user User @relation(fields: [userId], references: [id], onDelete: Restrict)
+
+  @@index([tableName, recordId])
+  @@index([createdAt])
+  @@index([userId])
+  @@map("audit_log")
+}

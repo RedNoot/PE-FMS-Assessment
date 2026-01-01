@@ -1,0 +1,1666 @@
+Attribut
+e VB_Nam
+e = "Thi
+sWorkboo
+0{00020P819-
+$0046}
+|Global
+Spac
+dCreat
+Pred
+ecla
+BExpo
+Templ
+ateDeriv
+Bustomi
+Attribut
+e VB_Nam
+e = "She@et1"
+t0{000
+20820-
+$0046
+|Global!
+Spac
+dCrea
+tabl
+Pre decla
+BExp
+Temp
+lateDeri
+Bustom
+Attribut
+e VB_Nam
+e = "She@et2"
+t0{000
+20820-
+$0046
+|Global!
+Spac
+dCrea
+tabl
+Pre decla
+BExp
+Temp
+lateDeri
+Bustom
+Attribut
+e VB_Nam
+e = "She@et3"
+t0{000
+20820-
+$0046
+|Global!
+Spac
+dCrea
+tabl
+Pre decla
+BExp
+Temp
+lateDeri
+Bustom
+{Me/
+Attribut
+e VB_Nam
+e = "She@et4"
+t0{000
+20820-
+$0046
+|Global!
+Spac
+dCrea
+tabl
+Pre decla
+BExp
+Temp
+lateDeri
+Bustom
+[3V 
+Attribut
+e VB_Nam
+e = "She@et5"
+t0{000
+20820-
+$0046
+|Global!
+Spac
+dCrea
+tabl
+Pre decla
+BExp
+Temp
+lateDeri
+Bustom
+Attribut
+e VB_Nam
+e = "She@et6"
+t0{000
+20820-
+$0046
+|Global!
+Spac
+dCrea
+tabl
+Pre decla
+BExp
+Temp
+lateDeri
+Bustom
+Attribut
+e VB_Nam
+e = "She@et7"
+t0{000
+20820-
+$0046
+|Global!
+Spac
+dCrea
+tabl
+Pre decla
+BExp
+Temp
+lateDeri
+Bustom
+Attribut
+e VB_Nam
+e = "She@et8"
+t0{000
+20820-
+$0046
+|Global!
+Spac
+dCrea
+tabl
+Pre decla
+BExp
+Temp
+lateDeri
+Bustom
+vVei
+2A> 
+Attribut
+e VB_Nam
+e = "She@et9"
+t0{000
+20820-
+$0046
+|Global!
+Spac
+dCrea
+tabl
+Pre decla
+BExp
+Temp
+lateDeri
+Bustom
+s|]D
+Attribut
+e VB_Nam
+e = "She
+et10"
+x0{00
+020820-
+$004
+|GlobaBl
+Spac
+alse
+dCre atabl
+Pr@edecla
+pose
+plateDer
+Busto
+IAa?
+Attribut
+e VB_Nam
+e = "She
+et11"
+x0{00
+020820-
+$004
+|GlobaBl
+Spac
+alse
+dCre atabl
+Pr@edecla
+pose
+plateDer
+Busto
+Attribut
+e VB_Nam
+e = "She
+et12"
+x0{00
+020820-
+$004
+|GlobaBl
+Spac
+alse
+dCre atabl
+Pr@edecla
+pose
+plateDer
+Busto
+Attribut
+e VB_Nam
+e = "She
+et13"
+x0{00
+020820-
+$004
+|GlobaBl
+Spac
+alse
+dCre atabl
+Pr@edecla
+pose
+plateDer
+Busto
+Attribut
+e VB_Nam
+e = "She
+et14"
+x0{00
+020820-
+$004
+|GlobaBl
+Spac
+alse
+dCre atabl
+Pr@edecla
+pose
+plateDer
+Busto
+Class List 
+ Ask for year
+Enter the year to retrieve data from (e.g. 2025):
+ Ask for whole school workbook file
+Excel Files (*.xlsm; *.xlsx), *.xlsm; *.xlsx
+Select the Whole School Workbook 
+False
+ Ensure the sheet is named like "Year_2025"
+Year_
+Could not find sheet 'Year_
+' in selected file.
+Scripting.Dictionary$
+ 5 columns
+Vertical Jump
+ 5 columns
+Leap
+ 5 columns
+Dodge
+ 5 columns
+Catch
+ 6 columns
+Overhand Throw
+ 6 columns
+Kick
+ 7 columns
+Punt
+ 8 columns ? (was 7 before)
+Bounce
+ 5 columns (now starts at AY)
+Two-Handed Strike
+ 8 columns
+Forehand Strike
+ 7 columns
+Gymnastics
+ 4 columns
+Rock to Stand
+ 8 columns
+ Loop through each student in Class List
+ Find student row in Whole School sheet
+A2:A1000 
+ Loop through each skill and transfer data
+ Get data for this skill from Whole School 
+ Find matching student row in current skill sheet
+A5:A100
+ Write values into skill sheet starting at B
+ Run ASTS import after main loop
+Year_
+Import complete. 
+ASTS 2+3 
+ Loop through rows in class ASTS sheet (assume starting at row 5)
+ Check for match in column A (name), write to C
+A2:A1000 
+ ASTS time is in column 75 
+ Column C
+ Check for match in column J (name), write to L
+A2:A1000 
+ Column L
+Attribut
+e VB_Nam
+e = "Mod
+ule5"
+ub Impor
+tStudent
+DataFrom
+WholeSch
+ool()
+Dim y
+earInput  As S
+8filePat2h
+ Wo@rkbook
+sSource
+ sheet
+cu$rr
+assLis
+tRow
+zound
++Varian
+Array
+skillMa
+Objec
+tartC
+e, en
+plicatio
+n.ScreenDUp
+3ing
+alse
+f= This
+ys("B
+'@-k f
+Box("Ent@er theB
+  to re
+ev$e 
+e.g. 202
+/en Epxit @
+G"wIA
+PGe@tOpenF@
+@,xcel 
+s (*.xls
+", , "S\el@
+!""5
+Ensure
+ is 
+d l@ike "Y`
+Resu@
+~= j
+8" &
+GopTo 0
+I@s Noth!VT
+F "Could
+ not
+8nd 
+"' iHn sb0ed
+2vbExcla
+Clos|e Hfa
+= @Create
+qipt
+ic!tary
+.Add "R
+(4, 
+' 5 
+columns
+Vert@
+JumpF
+"Lea5
+"DPodge&
+"CatcJh
+ 6}$Overh
+9Throw&
+30, 35&
+ "Kick
+ ' 7!=
+Punt
+, 50
+ ? (was
+% (n
+Two-Hp
+Fore
+ymnas
+' 4C
+Rock1jS
+hLoop
+ugh each
+.Cells(
+).End(xl8Up)
+s(ib
+"dja
+\SkipT
+  6q
+qb\o
+, ee.R
+ange("A2
+:A1000"
+) Or
+ransf
+e.Key8_
+#<llI#
+me)(1
+*+ PG
+' Wri
+spAp
+qmd(
+, 2,*
+TS ib
+ after m
+ain loop
+Call I
+mportAST
+STimes(w
+bWholeSc
+hool.She
+ets("Yea
+r_" & y
+Input), 
+currentW
+Close Fa lse
+Ms@gBox "
+complete
+.", vbIn
+formatio
+-Applic
+.Screen
+ng =
+ Tru
+nd Sub
+sSource
+ As Work
+book
+SDim ws
+last
+Long!
+stud
+NaBm
+8Stri
+found
+ariant
+^2+3""
+j' L
+hrough rPows 
+F (ass
+/start@/
+.Cell
+K.@2s.C
+4@t, 1).@g(`xlUp)
+For i
+5 ToE
+' Check #
+tchBPol
+umn A (n
+write 
+to C
+iBJVal
+<> "" '
+ange("A2
+:A1000"
+0D;!
+ IsError
++ 1, 7H5).
+(75G&_A
+O?<?<
+?<?<?<
+%?< +<
+Next i
+vV)M
+$</A
+Attribut
+e VB_Nam
+e = "She
+et20"
+x0{00
+020820-
+$004
+|GlobaBl
+Spac
+alse
+dCre atabl
+Pr@edecla
+pose
+plateDer
+Busto
+Attribut
+e VB_Nam
+e = "She
+et16"
+x0{00
+020820-
+$004
+|GlobaBl
+Spac
+alse
+dCre atabl
+Pr@edecla
+pose
+plateDer
+Busto
+D@YH{
+Attribut
+e VB_Nam
+e = "She
+et18"
+x0{00
+020820-
+$004
+|GlobaBl
+Spac
+alse
+dCre atabl
+Pr@edecla
+pose
+plateDer
+Busto
+File selection cancelled or failed. Class List update aborted. 
+Cancelled / Error
+amed R
+ User cancelled file selection or an error occurred
+ strind
+ Call the modified refresh/copy sub
+ Now refresh the query and copy the datare
+ A file path was successfully obtained and stored in CSV_Path
+ Check if a file was selected (SelectCSVPath returns "" if cancelled or error)
+ Calls the file selection function
+ Prompt user to select file and update named range "CSV_Path"
+ This combines selecting the file and refreshing/copying
+ --- MAIN MACRO TO RUN FROM A BUTTON ---leo
+An error occurred in RefreshAndCopyData_AndWait: 
+(Error 
+Macro Error
+Error Description: 
+Error Number:  
+l/shee[
+Error occurred! Jumping to ErrorHandler.
+ Checkpoint Error
+ilure
+Entering Cleanup...
+ Checkpoint Cleanup
+Student Form Group
+StudentFormGroup
+Class List has been updated! 
+Update Complete
+Showing completion message...
+ Checkpoint 11@
+No source data found to copy.
+ Checkpoint 9 Alternate
+Source range does not have enough columns (Needs 3).
+ Checkpoint 9 Error Cols
+Data copy complete.
+ Checkpoint 10ences
+ Age
+ Gender
+ Name
+anno 
+CSV_[
+Attempting to copy data values...
+ Checkpoint 9
+Destination range cleared.
+ Checkpoint 8
+A5:C1000 
+date[
+Attempting to clear destination range A5:C1000...
+ Checkpoint 7
+Source range determined for copy. lastRowSource =  
+ Checkpoint 6
+Critical Error: Could not find the source Table '
+' to copy data from.
+Table '
+' NOT found for copying. Cannot copy data.
+ Checkpoint 5b - Error Condition
+bjecd
+Table is empty.
+ Checkpoint 5a - Empty Table
+Table '
+' found for copying.
+ Checkpoint 5at  
+esh 
+ Use the specific Table Name
+ Re-find the table to ensure we use it for copying[
+Starting Copy Logic...
+ Checkpoint 4
+its 
+ ... (Copy logic remains the same as previous working version) ...
+ --- Copy Data ---k
+ Check if refresh was successfulank
+cal, "
+ror"
+Error: Could not find or refresh the Power Query named ' 
+Ensure CSV Path is valid and Query/Table names are correct.
+Refresh Error
+Refresh Logic Finished. queryRefreshed = 
+ Checkpoint 3
+Could not obtain a valid QueryTable object reference.
+ Checkpoint 2e - Not Found Combined
+QueryTable Refresh marked complete.
+ Checkpoint 2gSource 
+int 
+QueryTable.Refresh call completed.
+ Checkpoint 2g Post-Refresh
+ <<< This is the core refresh call
+Attempting QueryTable.Refresh call...
+ Checkpoint 2f
+Setting BackgroundQuery to False...
+ Checkpoint 2f Pre-BQ
+Successfully obtained QueryTable object reference.
+ Checkpoint 2e (Modified)
+QueryTable property reference obtained for Table ' 
+Table '
+' found. Checking its QueryTable property...
+Trying QueryTable Refresh...
+ Checkpoint 2d
+ If not refreshed via Connection, try via QueryTable object
+Connection ' 
+' not found.
+Connection Refresh Complete.
+Attempting Connection Refresh...
+ Exit if already refreshing
+ ... (Connection refresh logic remains the same as previous working version) ...
+ Try refreshing via WorkbookConnection object first
+Starting Refresh Logic...
+ Checkpoint 2
+ --- Refresh Power Query and Wait ---
+CSV Path found:  
+ Checkpoint PreRefresh-PathOK
+ Exit because refresh would likely fail
+CSV Path is blank before refresh attempt.
+ Checkpoint PreRefresh-BlankPathV file 
+atiok
+The path to the CSV file is currently blank. 
+Please run the 'Update Class List' process again and select a valid CSV file.
+CSV Path MissingA@j
+ Restore error handling
+ Exit if we can't even read the path
+Error: Cannot read named range 'CSV_Path'. Please ensure it exists.
+CSV_Path 
+ In case named range doesn't exist
+ --- Check CSV Path Value BEFORE attempting refresh ---
+Worksheets Set
+ Checkpoint 1
+Class List 
+Class List Import
+ Set worksheet references
+Starting RefreshAndCopyData_AndWait...
+ Checkpoint Start
+StudentFormGroup
+ The name of the Table on Class List Import sheet
+Student Form Group
+ The name of the Power Query query
+ *** Names provided by user ***
+ Variable to hold the path from named range
+ Alternative if not using WorkbookConnection
+ To handle data loaded into an Excel Table]
+ --- Macro to Refresh Power Query AND WAIT, then Copy Data ---
+ Return empty on error
+An error occurred in SelectCSVPath:  
+Error occurred in SelectCSVPath function. Error Number:  
+, Description: 
+ Debug Error Handler
+Exiting SelectCSVPath function. Returning: " 
+ Debug Exit
+ Restore default error handling (was missing after successful write)
+ Return the path ONLY if write was successful
+Successfully wrote path '
+' to named range.
+ Debug Write OK
+ Indicate failure
+Error writing file path to named range 'CSV_Path'. 
+Is the cell/sheet protected? Error: 
+ERROR writing path to 
+. Error: 
+ Debug Write Error
+ Handle potential error writing to cell (e.g., protected sheet)
+ Try updating the value
+Named Range 'CSV_Path' found at: 
+ Debug Range Found (added External)
+ Indicate failure
+Error: Named range 'CSV_Path' not found. Please ensure it exists.
+ERROR: Named Range 'CSV_Path' NOT FOUND.
+ Debug Range Not Found
+ Turn off error skipping IMPORTANTLY turn off straight away
+CSV_Path 
+ Temporarily ignore errors finding the range
+ Reset before trying
+ Try to find the named range "CSV_Path"
+File Selected: 
+ Debug Path Selected
+User Cancelled file selection.
+ Debug Cancel
+ User Cancelled (-1 means OK was pressed)
+File Dialog Closed. FileChosen = 
+ Debug After Show
+Showing File Dialog...
+ Debug Before Show
+CSV Files
+*.csv
+Select Class List CSV File9
+ Configure the File Dialog
+Entering SelectCSVPath function...
+ Debug Start
+ --- Helper Function to Select CSV File and Update Named Range ---
+ Enforces variable declaration - good practice!
+Attribut
+e VB_Nam
+e = "Mod
+ule1"
+ption Ex
+plicit '
+ Enforce
+s variab
+le decla
+P- goo
+d practi
+-- Helpe`r Fun
+o Select
+ CSV Fi
+and Upda
+d Rangre
+ath() As
+Dim fd
+RDialo
+@Chosen
+nteger
+*TargeNt
+rror GoPTo E
+-ebug.Pr
+int "E
+..4."
+lar"t
+2Set
+m= ,Ap
+Pick
+' Co
+nfigure 
+S.Tit
+jlass 
+LisGm
+ters.Cle
+Add "
+s", "*
+.csv
+owMulti
+= False
+SShowiLngI3
+PBe@
+H Cl
+<>  -1 Th
+Cance@lled (@
+eans OK 
+esse
+edIte
+ms(1,
+ed: a'&
+' Try
+w= Not
+F' Res
+Dtry
+#f{E 
+T empor
+ igno`je
+~|s A
+ThisWo
+rkbook.
+).Refy`jTo$
+Turn of
+ skip
+IMPORT
+ANTLY te
+straight
+ awayM-`U
+&!Vk
+*=E@RROR: 
+3' NOT 
+FOUND
+@ Found
+sgBox
+3#?h
+se ens
+ vbCri
+Oia +Indi
+fail
+Odo"
+ at+
+ah..
+nal:=T
+rue)
+ (add
+Sval~u@
+O/B/Cm 
+potent
+ Xp9
+K (e0.g., Kp
+ctAP
+sheet/
+u.Numb
+&p ". r}S
+D`escri
+2& a+tLf g"
+/?#  /0#F
+sfdul
+Swr0"
+`& "'
+st!bdelfa
+t3h1
+~miss
+oIfw
+1x` P;
+D` occur
+Fin 
+;4DP
+=g B
+<AnD
+Macro
+eh Pow
+AND 
+WAIT,A
+py Datas
+(Sub
+dCopy
+`Wait(d)Q
+sSoup
+RI73
+Objs
+ ko b2@
+oaan
+o aQ
+PPdbl
+tHRow
+' Al
+ve pG
+ur?%
+y0hold
+om n
+amed ran
+' *** N
+s provid
+by user
+Const 
+POWER_QU
+ERY_NAME
+ As Stri
+ng = "St
+udent Fo
+rm Group
+" ' The 
+ of t
+XQuer
+`TAB
+Table on
+ Class L
+Import@ sheet
+n Error 
+GoTo
+dler
+GDebPug.P
+rRefre
+shAndCop@yData_
+W@ait...
+heckpoi
+Set 
+work
+B re
+ferences
+sSourc
+ThisW
+@book.S
+[s$("
+- B8 CSV 
+Path Val
+ue BEFOR
+E attempwBJ
+8AJ 
+esume Ne
+oIn ca
+ does
+n't ex@oC
+8csv
+HSV_
+jershToRA
+|.Numb
+<> 0A
+MsgBox "
+: Canno
+)'@A
+'. Ple
+ensure i
+/s.", vb
+Critical
+nup@A
+if wec@C
+>ven
+End IfO
+@Yto@"e}
+r  ,*"
+=is b
+lank bef
+<$?m`PreDf
+ toB
+dtly
+*Lf &\ _g
+'Upda4te
+ns @again  # 
+select a
+ valid
+7Exclama
+tion, "&!
+Miss *"G
+beca 
+uld likeq 
+faiDB
+ound: "
+=*7'
+-!-OK{KwD1 I
+.Scpreenb(`
+als@
+|= h
+LPogic
+via 
+1 obj
+6firs
+Is `
+' @  (H
+#@Fm
+eviou
+@!)a
+.Typ
+OLEDpB Or
+BC<B!
+Oalre
+Backg 
+ Com
+plete.XC
+TruD8
+& "' 
+AAtblf
+tpqh
+= wD
+0its 
+2e (Mod
+ified
+e~tB
+!$\9f
+-BQl
+T c$bd~
+s|t-
+queryR
+efreshed
+ = True
+$Debug
+.Print "
+Table A
+l mark
+omplete.
+" ' ChecHkpo
+Could
+ not obt
+ain a va
+lid 
+vobj
+ect refe
+renc
+oe -
+BFound
+ Combine
+oLogic  Fini
+ was suc
+cessful
+3Then
+MsgBox
+ "Error:
+the PoweBr
+ nam
+-POWER_Q
+UERY_NAM
+o& v
+bCrLf
+nsure
+ CSV Pat
+h is
+m.",
+itical, 
+XB1"
+o Cleanu
+Kj' ---
+@=py Data
+' ... ((Co@
+lBnreRm@
+\previou
+s workin
+g versio
+Sta|rt
+Set tbl
+Source@
+-BgA"t!
+to eCSwe
+ use it :f
+sume 
+Next
+@.ListO
+s@(TABLE
+BBpeci
+[C5N
+;ler
+dyRange 
+lastRozw
+mpty
+nD;A
+> 0 
+4NOTp50 CanA
+V d;
+ vnd
+Vcj8I
+romK
+$,rBLd 
+ !r 
+6%iD8DesRt
+.BY(`"A5")
+A<tt
+r Bd 
+inat@
+A5:C100:0
+.QWrContexnts
+*x:A@)
+q^1'!hues
+6lum
+n47 >= 3b5
+esiz
+:, 1)`.Valu
+' 7V
+Offset(
+' Ge
+zR9/
+8oes
+have
+toug
+ (Nee
+ds p
+ ssHr'fR
+tG-0
+9 Alter
+howA=D
+ageO-1N1s*
+S 4s Q
+been u"p
+ed!2
+H.Scr
+qPOn`
+LpqX
+S<ubq
+ o ccurr
+uNumbe
+- scrip
+%An 
+Wait
+Macro
+MAIN
+ MACRO T
+O RUN FR
+OM A BUT
+ S4C
+(P{!DD
+im s
+As St
+4#q"Q
+' P`
+all3
+e select
+ion fun
+Check if
+ a file 
+ed (
+CSVPat
+h return
+s ""
+`can
+cell
+Lor @error)
+Then
+xucces
+sfully o btain
+^an@d stor
+i4n 
+fresh 
+the quer
+7copy
+data
+PAndC
+Wait 
+modif*i
+&suBb
+$Else
+ User 
+Box "
+lass Lis
+t up
+ke a
+borted."
+, vbExcl
+, "CQ
+Attribut
+e VB_Nam
+e = "She
+et15"
+x0{00
+020820-
+$004
+|GlobaBl
+Spac
+alse
+dCre atabl
+Pr@edecla
+pose
+plateDer
+Busto
+ Try to get the year sheet
+ Create sheet if it doesn't exist
+ Copy headers from Base sheet if available
+Base 
+ Find last row and column in Class Export
+ Find next available row in target sheet
+ Copy the data from Class Export to Whole School
+ Clean up
+Class data successfully exported to sheet: 
+Attribut
+e VB_Nam
+e = "Mod
+ule4"
+ub Expor
+tClassTo
+WholeSch
+ool()
+Dim w
+B As Wo@rkbook
+Dsheet
+FTarge
+AfilePa
+yearInpu?
+ne xtRow
+tCol
+CApplica
+tion.Scr@eenUpd
+False
+DisplayA`lerts
+= This
+Xs("
+5k for 
+Box("Ent@er the
+e.g., 20
+25):", "Q
+~to 
+"@4en@
+' En
+sure valHid 
+Excel do
+esn't al
+s lik
+e only "/
+Ask 
+:o sel
+GetOp
+s (*.xls
+S@TS
+3=Fy4s.
+ETr|y 
+ 8rr
+IResu
+o 0G3Crea
+ if `F
+@0exis
+@Lws
+Is Noth
+oThenc
+s.Add(A
+f`^:=wb
+.Count)$
+.DSf!G
+' Cop
+y header
+s from B
+$ava
+ilabld
+0s(1)@
+stin
+End If
+:LFi
+column@
+Cells(wj
+C2,  
+(xxlUpb
+1\, 
+ToLefto
+n tC
+ + 1
+ange{
+PasteSp@ecial 
+Valu
+lean 
+98Cloaw#
+)ZCu
+TruT
+hMsg
+t txB
+uccessfu
+A, v
+Class Export 
+ Ask for year input
+Enter the year (e.g., 2025):
+Export to Whole School Sheet$
+ Ensure valid sheet name (Excel doesn't allow sheet names like only "2025")
+Year_
+ Ask user to select the Whole School workbook
+Excel Files (*.xlsm; *.xlsx), *.xlsm; *.xlsx
+Select the Whole School Workbook 
+False
+skillMa
+Objec
+9startC
+e, en
+plicatio
+n.ScreenDUp
+3ing
+alse
+f= This
+wsGg=
+xs("B
+'@-k f
+Box("Ent@er theB
+  to re
+ev$e A` f
+e.g. 202
+/en Epxit 
+G"wI
+PGe@tOpenF
+@,xcel 
+s (*.xls
+x), 
+, "Sel
+"/Bf
+0Ensu
+j is 
+d like t"Y@
+6Resuq 
+GoTo 0
+Is No
+th!TThen
+D "C
+ould not
+6nd 
+"' in sb0
+2vbE
+xclam
+Close Hda
++s a@
+ Zir colu
+mn range
+A"hC
+= Create
+("`xipt
+.Dic
+zary
+.Add "
+Run@
+Vert
+l Jump
+ 9, 13
+Le*a
+Catch
+OverhA
+)Throw&
+3 0, 352
+6, 42!
+Punt
+43P, 50
+63!Fore
+6`"7
+!ASTS
+ 2+3
+5, F7
+#ock
+XSnt`
+*'  Loop Ero
+ugh each
+{ Cgd
+.Cells(
+.Pxs.@>nt`(
+).End(xl8Up)
+k5  Dd
+s(ib
+bJSkip
+ p)~=
+_UUU
+kgM%12(
+D("A2:A1
+000"
+^(aU
+) Orpzt
+ 0St
+Nsf }
+In vI
+Keys
+\k R
+#\llI#
+4Pyc
+|57Q
+' Wr
+at B
+MUagd(
+, Ul
+mple
+VBAP@roject
+9stdo
+G{000204
+0046}#2
+.0#0#C:\
+Windows\
+System32
+e2.tlb#
+OLE Auto
+mation
+EOffic
+E2DF8
+D04C-5BF
+A-101B-BHDE5
+gram
+ Files\C ommon
+Class List 
+ Ask for year
+Enter the year to retrieve data from (e.g. 2025):
+ Ask for whole school workbook file
+Excel Files (*.xlsx), *.xlsx
+Select the Whole School Workbook 
+False
+ Ensure the sheet is named like "Year_2025"
+Year_
+Could not find sheet 'Year_
+' in selected file.
+ Map of skill names and their column ranges in Whole School Sheet
+Scripting.Dictionary$
+Vertical Jump
+Leap
+Dodge
+Catch
+Overhand Throw
+Kick
+Punt
+Bounce
+Two-Handed Strike
+Forehand Strike
+Gymnastics
+ASTS 2+3
+Rock to Stand
+ Loop through each student in Class List
+ Find student row in Whole School sheet
+A2:A1000 
+ Loop through each skill and transfer data
+ Get data for this skill from Whole School 
+ Find matching student row in current skill sheet
+A5:A100
+ Write values into skill sheet starting at B
+Import complete. 
+Attribut
+e VB_Nam
+e = "Mod
+ule6"
+ub Impor
+tStudent
+DataFrom
+WholeSch
+ool()
+Dim y
+earInput  As S
+8filePat2h
+ Wo@rkbook
+sSource
+ sheet
+cu$rr
+assLis
+tRow
+zound
++Varian
+Array
+Excel
+Win16
+Win32
+Win64x
+VBA6
+VBA7
+VBAProject
+stdole
+Office
+ThisWorkbook|
+_Evaluate
+Sheet1
+Sheet2
+Sheet3
+Sheet4
+Sheet5
+Sheet6
+Sheet7
+Sheet8
+Sheet9
+Sheet10 P
+Sheet11!P
+Sheet12"P
+Sheet13#P
+Sheet14$P
+Sheet15%P
+Sheet20EP
+Module3d
+RefreshAndCopyData
+wsSource
+Worksheet
+wsDest
+lastRoww
+ActiveWorkbook
+RefreshAll8l
+Sheets
+Cells
+Rows
+Count0v
+xlUp
+Range
+ClearContents{
+Copy
+MsgBox
+vbInformation
+Sheet18(P
+Module1b
+SelectClassListFile(
+fd7]
+FileDialog
+FileChosen
+filePath
+Application
+msoFileDialogFilePicker
+Title
+Filters
+Clear
+AllowMultiSelect
+Show
+SelectedItems
+Value
+Module2c
+Module4e
+ExportClassToWholeSchool
+wbClass
+Workbookk
+wsClassExportx
+wbWholeSchoolu
+wsTarget}
+yearInput
+sheetName6
+nextRow58
+lastCol64
+ScreenUpdating!
+DisplayAlerts
+InputBox
+GetOpenFilename]?
+WorkbooksB
+After
+Destination
+Columnsp9
+xlToLeftWY
+Column
+PasteSpecial
+Paste
+xlPasteValues
+Save
+CutCopyMode
+Module6g
+ImportStudentDataFromWholeSchoolA
+currentWB
+wsClassList
+studentName
+foundRowI
+dataArray
+skillMap
+skillName>
+startCol
+endCol
+skillWS=
+targetRow
+vbExclamation
+CreateObject
+SkipStudent_y
+Match
+IsErrorU
+Keysq
+NextSkill
+Sheet16&P
+Module5f
+ImportASTSTimesD
+wsASTSh
+astsTime2
+_Defaultj
+SelectCSVPath
+ErrorHandlerO
+Names
+RefersToRange
+Erro
+Number
+vbCritical+}
+Cleanup
+Description
+RefreshAndCopyData_AndWait/
+tblSource8
+ListObject
+lastRowSource
+rngSource{
+rngDest
+pqConnectionU
+WorkbookConnection+
+pqQueryTablef
+QueryTable
+queryRefreshed
+POWER_QUERY_NAMEM
+TABLE_NAMEC
+Connections
+xlConnectionTypeOLEDB
+xlConnectionTypeODBC8
+OLEDBConnection
+RefreshingE
+BackgroundQuery
+Refresh
+ListObjects7
+QueryTables
+vbCrLf
+DataBodyRange
+Resize@4
+Offset
+UpdateClassListFromCSV
+selectedFilePathb
+Item
+_B_var_ErrorHandler
+pqQueryTblEn
+_B_var_pqQueryTbl
+csvPathValue
+Trim@
+_B_var_TrimmT
+TargetRangeO.
+Address
+External
+|\K^m
+soft 
+Shared\O
+FFICE16\
+MSO.DLL#
+M 16.0 
+ LibrXary
+hisWorkb@ookG
+B|Sheet1*G
+S@#e@Xt
+Module
+2>,2
+:,<20
+UpdateClassListFromCSV
+ThisWorkbook
+Sheet1
+Sheet2
+Sheet3
+Sheet4
+Sheet5
+Sheet6
+Sheet7
+Sheet8
+Sheet9
+Sheet10
+Sheet11
+Sheet12
+Sheet13
+Sheet14
+Module5
+Sheet20
+Module3
+Sheet18
+Module1
+Module2
+Module4
+Module6
+Sheet16
+Sheet15
+VBAProject
+C:\Program Files\Common Files\Microsoft Shared\VBA\VBA7.1\VBE7.DLL
+C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE
+Excel
+C:\Windows\System32\stdole2.tlb
+stdole
+C:\Program Files\Common Files\Microsoft Shared\OFFICE16\MSO.DLL
+Office
+SelectCSVPath
+RefreshAndCopyData_AndWait
+ImportStudentDataFromWholeSchool
+ImportASTSTimes
+RefreshAndCopyData
+ExportClassToWholeSchool
+)_tW
+Workbook
+VBE7.DLL
+Worksheet
+wsSource
+currentWB
+ThisWorkbook
+Sheet1
+Sheet2
+Sheet3
+Sheet4
+Sheet5
+Sheet6
+Sheet7
+Sheet8
+Sheet9
+Sheet10
+Sheet11
+Sheet12
+Sheet13
+Sheet14
+Sheet18
+Module1
+Sheet20
+Module4
+Sheet16
+Module6
+Module5
+Sheet15
+ID="{4A2EA6BD-A926-453B-A871-90B62F1391FD}"
+Document=ThisWorkbook/&H00000000
+Document=Sheet1/&H00000000
+Document=Sheet2/&H00000000
+Document=Sheet3/&H00000000
+Document=Sheet4/&H00000000
+Document=Sheet5/&H00000000
+Document=Sheet6/&H00000000
+Document=Sheet7/&H00000000
+Document=Sheet8/&H00000000
+Document=Sheet9/&H00000000
+Document=Sheet10/&H00000000
+Document=Sheet11/&H00000000
+Document=Sheet12/&H00000000
+Document=Sheet13/&H00000000
+Document=Sheet14/&H00000000
+Document=Sheet18/&H00000000
+Module=Module1
+Document=Sheet20/&H00000000
+Module=Module4
+Document=Sheet16/&H00000000
+Module=Module6
+Module=Module5
+Document=Sheet15/&H00000000
+Name="VBAProject"
+HelpContextID="0"
+VersionCompatible32="393222000"
+CMG="C9CB2EB632B632B632B632"
+DPB="8E8C69B6EBBEB1BFB1BFB1"
+GC="5351B4FD78FE78FE87"
+[Host Extender Info]
+&H00000001={3832D640-CF90-11CF-8E43-00A0C911005A};VBE;&H00000000
+[Workspace]
+ThisWorkbook=0, 0, 0, 0, C
+Sheet1=0, 0, 0, 0, C
+Sheet2=0, 0, 0, 0, C
+Sheet3=0, 0, 0, 0, C
+Sheet4=0, 0, 0, 0, C
+Sheet5=0, 0, 0, 0, C
+Sheet6=0, 0, 0, 0, C
+Sheet7=0, 0, 0, 0, C
+Sheet8=0, 0, 0, 0, C
+Sheet9=0, 0, 0, 0, C
+Sheet10=0, 0, 0, 0, C
+Sheet11=0, 0, 0, 0, C
+Sheet12=0, 0, 0, 0, C
+Sheet13=0, 0, 0, 0, C
+Sheet14=0, 0, 0, 0, C
+Sheet18=0, 0, 0, 0, C
+Module1=116, 57, 1556, 662, C
+Sheet20=0, 0, 0, 0, C
+Module4=216, 176, 1373, 813, C
+Sheet16=0, 0, 0, 0, C
+Module6=410, 45, 1221, 768, C
+Module5=23, 70, 697, 836, C
+Sheet15=0, 0, 0, 0, C

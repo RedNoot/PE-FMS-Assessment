@@ -1,0 +1,14 @@
+====================================================================================================
+VBA EXTRACTION SUMMARY
+====================================================================================================
+Generated: 2026-01-01 12:06:39
+
+Output Directory: C:\Users\robke\OneDrive\Desktop\Rob's FMS Scorecard\vba_extractions
+
+Files Generated: 5
+
+  - 00_EXTRACTION_SUMMARY.txt (0.5 KB)
+  - Tracker_2.0_Formulas_Detailed.txt (132.7 KB)
+  - Tracker_2.0_sheet1.xml.xml (78.4 KB)
+  - Tracker_2.0_table1.xml.xml (3.0 KB)
+  - Tracker_2.0_vbaProject.bin.txt (21.4 KB)

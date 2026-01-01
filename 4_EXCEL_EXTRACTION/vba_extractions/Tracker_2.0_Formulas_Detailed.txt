@@ -1,0 +1,5305 @@
+====================================================================================================
+FORMULA ANALYSIS
+====================================================================================================
+Extracted: 2026-01-01 12:06:39
+
+Total Formulas: 4724
+
+
+SHEET: ASTS 2+3
+====================================================================================================
+Total: 124 | Simple: 84 | Moderate: 40 | Complex: 0
+
+
+--- MODERATE FORMULAS (40) ---
+
+F54: (Moderate, 33 chars)
+  =COUNT
+  IF(F$5:F$48, "Progressing")
+
+G54: (Moderate, 33 chars)
+  =COUNT
+  IF(G$5:G$48, "Progressing")
+
+H54: (Moderate, 33 chars)
+  =COUNT
+  IF(H$5:H$48, "Progressing")
+
+I54: (Moderate, 33 chars)
+  =COUNT
+  IF(I$5:I$48, "Progressing")
+
+O54: (Moderate, 33 chars)
+  =COUNT
+  IF(O$5:O$48, "Progressing")
+
+P54: (Moderate, 33 chars)
+  =COUNT
+  IF(P$5:P$48, "Progressing")
+
+Q54: (Moderate, 33 chars)
+  =COUNT
+  IF(Q$5:Q$48, "Progressing")
+
+R54: (Moderate, 33 chars)
+  =COUNT
+  IF(R$5:R$48, "Progressing")
+
+F51: (Moderate, 31 chars)
+  =COUNT
+  IF(F$5:F$48, "Excelling")
+
+G51: (Moderate, 31 chars)
+  =COUNT
+  IF(G$5:G$48, "Excelling")
+
+--- SIMPLE FORMULAS (84 total) ---
+E10: =(D10/C10)*100
+N10: =(M10/L10)*100
+E11: =(D11/C11)*100
+N11: =(M11/L11)*100
+E12: =(D12/C12)*100
+
+SHEET: Bounce
+====================================================================================================
+Total: 129 | Simple: 95 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+I5: (Complex, 350 chars)
+  =IFERROR(
+   
+  IF(H5 <= 
+    INDEX($B$36:$B$46, MATCH(G5, $A$36:$A$46, 0)), "Beginning",
+      
+  IF(H5 <= 
+    INDEX($C$36:$C$46, MATCH(G5, $A$36:$A$46, 0)), "Progressing",
+         
+  IF(H5 <= 
+    INDEX($D$36:$D$46, MATCH(G5, $A$36:$A$46, 0)), "Achieving",
+            
+  IF(H5 >= 
+    INDEX($E$36:$E$46, MATCH(G5, $A$36:$A$46, 0)), "Excelling", "Error")))),
+   "Age Not Found")
+
+I10: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H10 <= 
+    INDEX($B$36:$B$46, MATCH(G10, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H10 <= 
+    INDEX($C$36:$C$46, MATCH(G10, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H10 <= 
+    INDEX($D$36:$D$46, MATCH(G10, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H10 >= 
+    INDEX($E$36:$E$46, MATCH(G10, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I11: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H11 <= 
+    INDEX($B$36:$B$46, MATCH(G11, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H11 <= 
+    INDEX($C$36:$C$46, MATCH(G11, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H11 <= 
+    INDEX($D$36:$D$46, MATCH(G11, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H11 >= 
+    INDEX($E$36:$E$46, MATCH(G11, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I12: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H12 <= 
+    INDEX($B$36:$B$46, MATCH(G12, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H12 <= 
+    INDEX($C$36:$C$46, MATCH(G12, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H12 <= 
+    INDEX($D$36:$D$46, MATCH(G12, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H12 >= 
+    INDEX($E$36:$E$46, MATCH(G12, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I13: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H13 <= 
+    INDEX($B$36:$B$46, MATCH(G13, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H13 <= 
+    INDEX($C$36:$C$46, MATCH(G13, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H13 <= 
+    INDEX($D$36:$D$46, MATCH(G13, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H13 >= 
+    INDEX($E$36:$E$46, MATCH(G13, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I14: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H14 <= 
+    INDEX($B$36:$B$46, MATCH(G14, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H14 <= 
+    INDEX($C$36:$C$46, MATCH(G14, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H14 <= 
+    INDEX($D$36:$D$46, MATCH(G14, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H14 >= 
+    INDEX($E$36:$E$46, MATCH(G14, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I15: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H15 <= 
+    INDEX($B$36:$B$46, MATCH(G15, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H15 <= 
+    INDEX($C$36:$C$46, MATCH(G15, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H15 <= 
+    INDEX($D$36:$D$46, MATCH(G15, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H15 >= 
+    INDEX($E$36:$E$46, MATCH(G15, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I16: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H16 <= 
+    INDEX($B$36:$B$46, MATCH(G16, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H16 <= 
+    INDEX($C$36:$C$46, MATCH(G16, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H16 <= 
+    INDEX($D$36:$D$46, MATCH(G16, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H16 >= 
+    INDEX($E$36:$E$46, MATCH(G16, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I17: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H17 <= 
+    INDEX($B$36:$B$46, MATCH(G17, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H17 <= 
+    INDEX($C$36:$C$46, MATCH(G17, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H17 <= 
+    INDEX($D$36:$D$46, MATCH(G17, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H17 >= 
+    INDEX($E$36:$E$46, MATCH(G17, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I18: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H18 <= 
+    INDEX($B$36:$B$46, MATCH(G18, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H18 <= 
+    INDEX($C$36:$C$46, MATCH(G18, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H18 <= 
+    INDEX($D$36:$D$46, MATCH(G18, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H18 >= 
+    INDEX($E$36:$E$46, MATCH(G18, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I19: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H19 <= 
+    INDEX($B$36:$B$46, MATCH(G19, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H19 <= 
+    INDEX($C$36:$C$46, MATCH(G19, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H19 <= 
+    INDEX($D$36:$D$46, MATCH(G19, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H19 >= 
+    INDEX($E$36:$E$46, MATCH(G19, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I20: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H20 <= 
+    INDEX($B$36:$B$46, MATCH(G20, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H20 <= 
+    INDEX($C$36:$C$46, MATCH(G20, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H20 <= 
+    INDEX($D$36:$D$46, MATCH(G20, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H20 >= 
+    INDEX($E$36:$E$46, MATCH(G20, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I21: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H21 <= 
+    INDEX($B$36:$B$46, MATCH(G21, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H21 <= 
+    INDEX($C$36:$C$46, MATCH(G21, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H21 <= 
+    INDEX($D$36:$D$46, MATCH(G21, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H21 >= 
+    INDEX($E$36:$E$46, MATCH(G21, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I22: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H22 <= 
+    INDEX($B$36:$B$46, MATCH(G22, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H22 <= 
+    INDEX($C$36:$C$46, MATCH(G22, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H22 <= 
+    INDEX($D$36:$D$46, MATCH(G22, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H22 >= 
+    INDEX($E$36:$E$46, MATCH(G22, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I23: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H23 <= 
+    INDEX($B$36:$B$46, MATCH(G23, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H23 <= 
+    INDEX($C$36:$C$46, MATCH(G23, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H23 <= 
+    INDEX($D$36:$D$46, MATCH(G23, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H23 >= 
+    INDEX($E$36:$E$46, MATCH(G23, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I24: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H24 <= 
+    INDEX($B$36:$B$46, MATCH(G24, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H24 <= 
+    INDEX($C$36:$C$46, MATCH(G24, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H24 <= 
+    INDEX($D$36:$D$46, MATCH(G24, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H24 >= 
+    INDEX($E$36:$E$46, MATCH(G24, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I25: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H25 <= 
+    INDEX($B$36:$B$46, MATCH(G25, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H25 <= 
+    INDEX($C$36:$C$46, MATCH(G25, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H25 <= 
+    INDEX($D$36:$D$46, MATCH(G25, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H25 >= 
+    INDEX($E$36:$E$46, MATCH(G25, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I26: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H26 <= 
+    INDEX($B$36:$B$46, MATCH(G26, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H26 <= 
+    INDEX($C$36:$C$46, MATCH(G26, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H26 <= 
+    INDEX($D$36:$D$46, MATCH(G26, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H26 >= 
+    INDEX($E$36:$E$46, MATCH(G26, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I27: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H27 <= 
+    INDEX($B$36:$B$46, MATCH(G27, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H27 <= 
+    INDEX($C$36:$C$46, MATCH(G27, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H27 <= 
+    INDEX($D$36:$D$46, MATCH(G27, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H27 >= 
+    INDEX($E$36:$E$46, MATCH(G27, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I28: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H28 <= 
+    INDEX($B$36:$B$46, MATCH(G28, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H28 <= 
+    INDEX($C$36:$C$46, MATCH(G28, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H28 <= 
+    INDEX($D$36:$D$46, MATCH(G28, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H28 >= 
+    INDEX($E$36:$E$46, MATCH(G28, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+I40: (Moderate, 33 chars)
+  =COUNT
+  IF(I$5:I$34, "Progressing")
+
+I39: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Beginning")
+
+I41: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Achieving")
+
+I42: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Excelling")
+
+--- SIMPLE FORMULAS (95 total) ---
+G10: ='Class List'!$C10
+G11: ='Class List'!$C11
+G12: ='Class List'!$C12
+G13: ='Class List'!$C13
+G14: ='Class List'!$C14
+
+SHEET: Catch
+====================================================================================================
+Total: 130 | Simple: 96 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+J5: (Complex, 350 chars)
+  =IFERROR(
+   
+  IF(I5 <= 
+    INDEX($B$36:$B$46, MATCH(H5, $A$36:$A$46, 0)), "Beginning",
+      
+  IF(I5 <= 
+    INDEX($C$36:$C$46, MATCH(H5, $A$36:$A$46, 0)), "Progressing",
+         
+  IF(I5 <= 
+    INDEX($D$36:$D$46, MATCH(H5, $A$36:$A$46, 0)), "Achieving",
+            
+  IF(I5 >= 
+    INDEX($E$36:$E$46, MATCH(H5, $A$36:$A$46, 0)), "Excelling", "Error")))),
+   "Age Not Found")
+
+J10: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I10 <= 
+    INDEX($B$36:$B$46, MATCH(H10, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I10 <= 
+    INDEX($C$36:$C$46, MATCH(H10, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I10 <= 
+    INDEX($D$36:$D$46, MATCH(H10, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I10 >= 
+    INDEX($E$36:$E$46, MATCH(H10, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J11: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I11 <= 
+    INDEX($B$36:$B$46, MATCH(H11, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I11 <= 
+    INDEX($C$36:$C$46, MATCH(H11, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I11 <= 
+    INDEX($D$36:$D$46, MATCH(H11, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I11 >= 
+    INDEX($E$36:$E$46, MATCH(H11, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J12: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I12 <= 
+    INDEX($B$36:$B$46, MATCH(H12, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I12 <= 
+    INDEX($C$36:$C$46, MATCH(H12, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I12 <= 
+    INDEX($D$36:$D$46, MATCH(H12, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I12 >= 
+    INDEX($E$36:$E$46, MATCH(H12, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J13: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I13 <= 
+    INDEX($B$36:$B$46, MATCH(H13, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I13 <= 
+    INDEX($C$36:$C$46, MATCH(H13, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I13 <= 
+    INDEX($D$36:$D$46, MATCH(H13, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I13 >= 
+    INDEX($E$36:$E$46, MATCH(H13, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J14: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I14 <= 
+    INDEX($B$36:$B$46, MATCH(H14, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I14 <= 
+    INDEX($C$36:$C$46, MATCH(H14, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I14 <= 
+    INDEX($D$36:$D$46, MATCH(H14, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I14 >= 
+    INDEX($E$36:$E$46, MATCH(H14, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J15: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I15 <= 
+    INDEX($B$36:$B$46, MATCH(H15, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I15 <= 
+    INDEX($C$36:$C$46, MATCH(H15, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I15 <= 
+    INDEX($D$36:$D$46, MATCH(H15, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I15 >= 
+    INDEX($E$36:$E$46, MATCH(H15, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J16: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I16 <= 
+    INDEX($B$36:$B$46, MATCH(H16, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I16 <= 
+    INDEX($C$36:$C$46, MATCH(H16, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I16 <= 
+    INDEX($D$36:$D$46, MATCH(H16, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I16 >= 
+    INDEX($E$36:$E$46, MATCH(H16, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J17: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I17 <= 
+    INDEX($B$36:$B$46, MATCH(H17, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I17 <= 
+    INDEX($C$36:$C$46, MATCH(H17, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I17 <= 
+    INDEX($D$36:$D$46, MATCH(H17, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I17 >= 
+    INDEX($E$36:$E$46, MATCH(H17, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J18: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I18 <= 
+    INDEX($B$36:$B$46, MATCH(H18, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I18 <= 
+    INDEX($C$36:$C$46, MATCH(H18, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I18 <= 
+    INDEX($D$36:$D$46, MATCH(H18, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I18 >= 
+    INDEX($E$36:$E$46, MATCH(H18, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J19: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I19 <= 
+    INDEX($B$36:$B$46, MATCH(H19, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I19 <= 
+    INDEX($C$36:$C$46, MATCH(H19, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I19 <= 
+    INDEX($D$36:$D$46, MATCH(H19, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I19 >= 
+    INDEX($E$36:$E$46, MATCH(H19, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J20: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I20 <= 
+    INDEX($B$36:$B$46, MATCH(H20, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I20 <= 
+    INDEX($C$36:$C$46, MATCH(H20, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I20 <= 
+    INDEX($D$36:$D$46, MATCH(H20, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I20 >= 
+    INDEX($E$36:$E$46, MATCH(H20, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J21: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I21 <= 
+    INDEX($B$36:$B$46, MATCH(H21, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I21 <= 
+    INDEX($C$36:$C$46, MATCH(H21, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I21 <= 
+    INDEX($D$36:$D$46, MATCH(H21, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I21 >= 
+    INDEX($E$36:$E$46, MATCH(H21, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J22: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I22 <= 
+    INDEX($B$36:$B$46, MATCH(H22, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I22 <= 
+    INDEX($C$36:$C$46, MATCH(H22, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I22 <= 
+    INDEX($D$36:$D$46, MATCH(H22, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I22 >= 
+    INDEX($E$36:$E$46, MATCH(H22, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J23: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I23 <= 
+    INDEX($B$36:$B$46, MATCH(H23, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I23 <= 
+    INDEX($C$36:$C$46, MATCH(H23, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I23 <= 
+    INDEX($D$36:$D$46, MATCH(H23, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I23 >= 
+    INDEX($E$36:$E$46, MATCH(H23, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J24: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I24 <= 
+    INDEX($B$36:$B$46, MATCH(H24, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I24 <= 
+    INDEX($C$36:$C$46, MATCH(H24, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I24 <= 
+    INDEX($D$36:$D$46, MATCH(H24, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I24 >= 
+    INDEX($E$36:$E$46, MATCH(H24, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J25: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I25 <= 
+    INDEX($B$36:$B$46, MATCH(H25, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I25 <= 
+    INDEX($C$36:$C$46, MATCH(H25, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I25 <= 
+    INDEX($D$36:$D$46, MATCH(H25, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I25 >= 
+    INDEX($E$36:$E$46, MATCH(H25, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J26: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I26 <= 
+    INDEX($B$36:$B$46, MATCH(H26, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I26 <= 
+    INDEX($C$36:$C$46, MATCH(H26, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I26 <= 
+    INDEX($D$36:$D$46, MATCH(H26, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I26 >= 
+    INDEX($E$36:$E$46, MATCH(H26, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J27: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I27 <= 
+    INDEX($B$36:$B$46, MATCH(H27, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I27 <= 
+    INDEX($C$36:$C$46, MATCH(H27, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I27 <= 
+    INDEX($D$36:$D$46, MATCH(H27, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I27 >= 
+    INDEX($E$36:$E$46, MATCH(H27, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J28: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I28 <= 
+    INDEX($B$36:$B$46, MATCH(H28, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I28 <= 
+    INDEX($C$36:$C$46, MATCH(H28, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I28 <= 
+    INDEX($D$36:$D$46, MATCH(H28, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I28 >= 
+    INDEX($E$36:$E$46, MATCH(H28, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+J40: (Moderate, 33 chars)
+  =COUNT
+  IF(J$5:J$34, "Progressing")
+
+J39: (Moderate, 31 chars)
+  =COUNT
+  IF(J$5:J$34, "Beginning")
+
+J41: (Moderate, 31 chars)
+  =COUNT
+  IF(J$5:J$34, "Achieving")
+
+J42: (Moderate, 31 chars)
+  =COUNT
+  IF(J$5:J$34, "Excelling")
+
+--- SIMPLE FORMULAS (96 total) ---
+H10: ='Class List'!$C10
+H11: ='Class List'!$C11
+H12: ='Class List'!$C12
+H13: ='Class List'!$C13
+H14: ='Class List'!$C14
+
+SHEET: Class Export
+====================================================================================================
+Total: 2490 | Simple: 2460 | Moderate: 0 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+BW10: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A10, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A10, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW11: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A11, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A11, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW12: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A12, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A12, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW13: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A13, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A13, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW14: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A14, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A14, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW15: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A15, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A15, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW16: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A16, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A16, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW17: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A17, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A17, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW18: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A18, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A18, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW19: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A19, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A19, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW20: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A20, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A20, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW21: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A21, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A21, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW22: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A22, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A22, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW23: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A23, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A23, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW24: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A24, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A24, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW25: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A25, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A25, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW26: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A26, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A26, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW27: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A27, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A27, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW28: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A28, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A28, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+BW29: (Complex, 158 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!A:L, MATCH(A29, 'ASTS 2+3'!A:A, 0), 3),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!J:L, MATCH(A29, 'ASTS 2+3'!J:J, 0), 3),
+    "")
+)
+
+--- SIMPLE FORMULAS (2460 total) ---
+BD7: ='Two-handed strike'!B10
+BE7: ='Two-handed strike'!C10
+BF7: ='Two-handed strike'!D10
+BG7: ='Two-handed strike'!E10
+BH7: ='Two-handed strike'!F10
+
+SHEET: Class List
+====================================================================================================
+Total: 420 | Simple: 390 | Moderate: 0 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+S10: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A10, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C10 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A10, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C10 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S11: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A11, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C11 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A11, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C11 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S12: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A12, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C12 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A12, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C12 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S13: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A13, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C13 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A13, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C13 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S14: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A14, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C14 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A14, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C14 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S15: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A15, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C15 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A15, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C15 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S16: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A16, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C16 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A16, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C16 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S17: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A17, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C17 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A17, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C17 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S18: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A18, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C18 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A18, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C18 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S19: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A19, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C19 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A19, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C19 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S20: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A20, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C20 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A20, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C20 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S21: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A21, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C21 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A21, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C21 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S22: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A22, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C22 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A22, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C22 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S23: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A23, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C23 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A23, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C23 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S24: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A24, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C24 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A24, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C24 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S25: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A25, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C25 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A25, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C25 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S26: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A26, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C26 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A26, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C26 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S27: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A27, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C27 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A27, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C27 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S28: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A28, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C28 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A28, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C28 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+S29: (Complex, 384 chars)
+  =IFERROR(
+    
+    INDEX('ASTS 2+3'!$F$5:$I$100,
+        MATCH(A29, 'ASTS 2+3'!$A$5:$A$100, 0),
+        MATCH("Normative value if " & C29 & " years old", 'ASTS 2+3'!$F$4:$I$4, 0)),
+    IFERROR(
+        
+    INDEX('ASTS 2+3'!$O$5:$R$100,
+            MATCH(A29, 'ASTS 2+3'!$J$5:$J$100, 0),
+            MATCH("Normative value if " & C29 & " years old", 'ASTS 2+3'!$O$4:$R$4, 0)),
+    "Not Found"))
+
+--- SIMPLE FORMULAS (390 total) ---
+M10: ='Two-handed strike'!L10
+M11: ='Two-handed strike'!L11
+M12: ='Two-handed strike'!L12
+M13: ='Two-handed strike'!L13
+M14: ='Two-handed strike'!L14
+
+SHEET: Dodge
+====================================================================================================
+Total: 129 | Simple: 95 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+I5: (Complex, 350 chars)
+  =IFERROR(
+   
+  IF(H5 <= 
+    INDEX($B$36:$B$46, MATCH(G5, $A$36:$A$46, 0)), "Beginning",
+      
+  IF(H5 <= 
+    INDEX($C$36:$C$46, MATCH(G5, $A$36:$A$46, 0)), "Progressing",
+         
+  IF(H5 <= 
+    INDEX($D$36:$D$46, MATCH(G5, $A$36:$A$46, 0)), "Achieving",
+            
+  IF(H5 >= 
+    INDEX($E$36:$E$46, MATCH(G5, $A$36:$A$46, 0)), "Excelling", "Error")))),
+   "Age Not Found")
+
+I10: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H10 <= 
+    INDEX($B$36:$B$46, MATCH(G10, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H10 <= 
+    INDEX($C$36:$C$46, MATCH(G10, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H10 <= 
+    INDEX($D$36:$D$46, MATCH(G10, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H10 >= 
+    INDEX($E$36:$E$46, MATCH(G10, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I11: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H11 <= 
+    INDEX($B$36:$B$46, MATCH(G11, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H11 <= 
+    INDEX($C$36:$C$46, MATCH(G11, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H11 <= 
+    INDEX($D$36:$D$46, MATCH(G11, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H11 >= 
+    INDEX($E$36:$E$46, MATCH(G11, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I12: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H12 <= 
+    INDEX($B$36:$B$46, MATCH(G12, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H12 <= 
+    INDEX($C$36:$C$46, MATCH(G12, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H12 <= 
+    INDEX($D$36:$D$46, MATCH(G12, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H12 >= 
+    INDEX($E$36:$E$46, MATCH(G12, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I13: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H13 <= 
+    INDEX($B$36:$B$46, MATCH(G13, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H13 <= 
+    INDEX($C$36:$C$46, MATCH(G13, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H13 <= 
+    INDEX($D$36:$D$46, MATCH(G13, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H13 >= 
+    INDEX($E$36:$E$46, MATCH(G13, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I14: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H14 <= 
+    INDEX($B$36:$B$46, MATCH(G14, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H14 <= 
+    INDEX($C$36:$C$46, MATCH(G14, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H14 <= 
+    INDEX($D$36:$D$46, MATCH(G14, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H14 >= 
+    INDEX($E$36:$E$46, MATCH(G14, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I15: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H15 <= 
+    INDEX($B$36:$B$46, MATCH(G15, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H15 <= 
+    INDEX($C$36:$C$46, MATCH(G15, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H15 <= 
+    INDEX($D$36:$D$46, MATCH(G15, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H15 >= 
+    INDEX($E$36:$E$46, MATCH(G15, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I16: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H16 <= 
+    INDEX($B$36:$B$46, MATCH(G16, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H16 <= 
+    INDEX($C$36:$C$46, MATCH(G16, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H16 <= 
+    INDEX($D$36:$D$46, MATCH(G16, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H16 >= 
+    INDEX($E$36:$E$46, MATCH(G16, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I17: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H17 <= 
+    INDEX($B$36:$B$46, MATCH(G17, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H17 <= 
+    INDEX($C$36:$C$46, MATCH(G17, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H17 <= 
+    INDEX($D$36:$D$46, MATCH(G17, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H17 >= 
+    INDEX($E$36:$E$46, MATCH(G17, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I18: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H18 <= 
+    INDEX($B$36:$B$46, MATCH(G18, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H18 <= 
+    INDEX($C$36:$C$46, MATCH(G18, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H18 <= 
+    INDEX($D$36:$D$46, MATCH(G18, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H18 >= 
+    INDEX($E$36:$E$46, MATCH(G18, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I19: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H19 <= 
+    INDEX($B$36:$B$46, MATCH(G19, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H19 <= 
+    INDEX($C$36:$C$46, MATCH(G19, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H19 <= 
+    INDEX($D$36:$D$46, MATCH(G19, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H19 >= 
+    INDEX($E$36:$E$46, MATCH(G19, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I20: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H20 <= 
+    INDEX($B$36:$B$46, MATCH(G20, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H20 <= 
+    INDEX($C$36:$C$46, MATCH(G20, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H20 <= 
+    INDEX($D$36:$D$46, MATCH(G20, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H20 >= 
+    INDEX($E$36:$E$46, MATCH(G20, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I21: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H21 <= 
+    INDEX($B$36:$B$46, MATCH(G21, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H21 <= 
+    INDEX($C$36:$C$46, MATCH(G21, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H21 <= 
+    INDEX($D$36:$D$46, MATCH(G21, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H21 >= 
+    INDEX($E$36:$E$46, MATCH(G21, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I22: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H22 <= 
+    INDEX($B$36:$B$46, MATCH(G22, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H22 <= 
+    INDEX($C$36:$C$46, MATCH(G22, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H22 <= 
+    INDEX($D$36:$D$46, MATCH(G22, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H22 >= 
+    INDEX($E$36:$E$46, MATCH(G22, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I23: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H23 <= 
+    INDEX($B$36:$B$46, MATCH(G23, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H23 <= 
+    INDEX($C$36:$C$46, MATCH(G23, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H23 <= 
+    INDEX($D$36:$D$46, MATCH(G23, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H23 >= 
+    INDEX($E$36:$E$46, MATCH(G23, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I24: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H24 <= 
+    INDEX($B$36:$B$46, MATCH(G24, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H24 <= 
+    INDEX($C$36:$C$46, MATCH(G24, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H24 <= 
+    INDEX($D$36:$D$46, MATCH(G24, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H24 >= 
+    INDEX($E$36:$E$46, MATCH(G24, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I25: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H25 <= 
+    INDEX($B$36:$B$46, MATCH(G25, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H25 <= 
+    INDEX($C$36:$C$46, MATCH(G25, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H25 <= 
+    INDEX($D$36:$D$46, MATCH(G25, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H25 >= 
+    INDEX($E$36:$E$46, MATCH(G25, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I26: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H26 <= 
+    INDEX($B$36:$B$46, MATCH(G26, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H26 <= 
+    INDEX($C$36:$C$46, MATCH(G26, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H26 <= 
+    INDEX($D$36:$D$46, MATCH(G26, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H26 >= 
+    INDEX($E$36:$E$46, MATCH(G26, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I27: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H27 <= 
+    INDEX($B$36:$B$46, MATCH(G27, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H27 <= 
+    INDEX($C$36:$C$46, MATCH(G27, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H27 <= 
+    INDEX($D$36:$D$46, MATCH(G27, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H27 >= 
+    INDEX($E$36:$E$46, MATCH(G27, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I28: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H28 <= 
+    INDEX($B$36:$B$46, MATCH(G28, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H28 <= 
+    INDEX($C$36:$C$46, MATCH(G28, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H28 <= 
+    INDEX($D$36:$D$46, MATCH(G28, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H28 >= 
+    INDEX($E$36:$E$46, MATCH(G28, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+I40: (Moderate, 33 chars)
+  =COUNT
+  IF(I$5:I$34, "Progressing")
+
+I39: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Beginning")
+
+I41: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Achieving")
+
+I42: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Excelling")
+
+--- SIMPLE FORMULAS (95 total) ---
+G10: ='Class List'!$C10
+G11: ='Class List'!$C11
+G12: ='Class List'!$C12
+G13: ='Class List'!$C13
+G14: ='Class List'!$C14
+
+SHEET: Forehand strike
+====================================================================================================
+Total: 131 | Simple: 97 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+K5: (Complex, 350 chars)
+  =IFERROR(
+   
+  IF(J5 <= 
+    INDEX($B$36:$B$46, MATCH(I5, $A$36:$A$46, 0)), "Beginning",
+      
+  IF(J5 <= 
+    INDEX($C$36:$C$46, MATCH(I5, $A$36:$A$46, 0)), "Progressing",
+         
+  IF(J5 <= 
+    INDEX($D$36:$D$46, MATCH(I5, $A$36:$A$46, 0)), "Achieving",
+            
+  IF(J5 >= 
+    INDEX($E$36:$E$46, MATCH(I5, $A$36:$A$46, 0)), "Excelling", "Error")))),
+   "Age Not Found")
+
+K6: (Complex, 350 chars)
+  =IFERROR(
+   
+  IF(J6 <= 
+    INDEX($B$36:$B$46, MATCH(I6, $A$36:$A$46, 0)), "Beginning",
+      
+  IF(J6 <= 
+    INDEX($C$36:$C$46, MATCH(I6, $A$36:$A$46, 0)), "Progressing",
+         
+  IF(J6 <= 
+    INDEX($D$36:$D$46, MATCH(I6, $A$36:$A$46, 0)), "Achieving",
+            
+  IF(J6 >= 
+    INDEX($E$36:$E$46, MATCH(I6, $A$36:$A$46, 0)), "Excelling", "Error")))),
+   "Age Not Found")
+
+K10: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J10 <= 
+    INDEX($B$36:$B$46, MATCH(I10, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J10 <= 
+    INDEX($C$36:$C$46, MATCH(I10, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J10 <= 
+    INDEX($D$36:$D$46, MATCH(I10, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J10 >= 
+    INDEX($E$36:$E$46, MATCH(I10, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K11: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J11 <= 
+    INDEX($B$36:$B$46, MATCH(I11, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J11 <= 
+    INDEX($C$36:$C$46, MATCH(I11, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J11 <= 
+    INDEX($D$36:$D$46, MATCH(I11, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J11 >= 
+    INDEX($E$36:$E$46, MATCH(I11, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K12: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J12 <= 
+    INDEX($B$36:$B$46, MATCH(I12, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J12 <= 
+    INDEX($C$36:$C$46, MATCH(I12, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J12 <= 
+    INDEX($D$36:$D$46, MATCH(I12, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J12 >= 
+    INDEX($E$36:$E$46, MATCH(I12, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K13: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J13 <= 
+    INDEX($B$36:$B$46, MATCH(I13, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J13 <= 
+    INDEX($C$36:$C$46, MATCH(I13, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J13 <= 
+    INDEX($D$36:$D$46, MATCH(I13, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J13 >= 
+    INDEX($E$36:$E$46, MATCH(I13, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K14: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J14 <= 
+    INDEX($B$36:$B$46, MATCH(I14, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J14 <= 
+    INDEX($C$36:$C$46, MATCH(I14, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J14 <= 
+    INDEX($D$36:$D$46, MATCH(I14, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J14 >= 
+    INDEX($E$36:$E$46, MATCH(I14, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K15: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J15 <= 
+    INDEX($B$36:$B$46, MATCH(I15, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J15 <= 
+    INDEX($C$36:$C$46, MATCH(I15, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J15 <= 
+    INDEX($D$36:$D$46, MATCH(I15, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J15 >= 
+    INDEX($E$36:$E$46, MATCH(I15, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K16: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J16 <= 
+    INDEX($B$36:$B$46, MATCH(I16, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J16 <= 
+    INDEX($C$36:$C$46, MATCH(I16, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J16 <= 
+    INDEX($D$36:$D$46, MATCH(I16, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J16 >= 
+    INDEX($E$36:$E$46, MATCH(I16, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K17: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J17 <= 
+    INDEX($B$36:$B$46, MATCH(I17, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J17 <= 
+    INDEX($C$36:$C$46, MATCH(I17, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J17 <= 
+    INDEX($D$36:$D$46, MATCH(I17, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J17 >= 
+    INDEX($E$36:$E$46, MATCH(I17, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K18: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J18 <= 
+    INDEX($B$36:$B$46, MATCH(I18, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J18 <= 
+    INDEX($C$36:$C$46, MATCH(I18, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J18 <= 
+    INDEX($D$36:$D$46, MATCH(I18, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J18 >= 
+    INDEX($E$36:$E$46, MATCH(I18, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K19: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J19 <= 
+    INDEX($B$36:$B$46, MATCH(I19, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J19 <= 
+    INDEX($C$36:$C$46, MATCH(I19, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J19 <= 
+    INDEX($D$36:$D$46, MATCH(I19, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J19 >= 
+    INDEX($E$36:$E$46, MATCH(I19, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K20: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J20 <= 
+    INDEX($B$36:$B$46, MATCH(I20, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J20 <= 
+    INDEX($C$36:$C$46, MATCH(I20, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J20 <= 
+    INDEX($D$36:$D$46, MATCH(I20, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J20 >= 
+    INDEX($E$36:$E$46, MATCH(I20, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K21: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J21 <= 
+    INDEX($B$36:$B$46, MATCH(I21, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J21 <= 
+    INDEX($C$36:$C$46, MATCH(I21, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J21 <= 
+    INDEX($D$36:$D$46, MATCH(I21, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J21 >= 
+    INDEX($E$36:$E$46, MATCH(I21, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K22: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J22 <= 
+    INDEX($B$36:$B$46, MATCH(I22, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J22 <= 
+    INDEX($C$36:$C$46, MATCH(I22, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J22 <= 
+    INDEX($D$36:$D$46, MATCH(I22, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J22 >= 
+    INDEX($E$36:$E$46, MATCH(I22, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K23: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J23 <= 
+    INDEX($B$36:$B$46, MATCH(I23, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J23 <= 
+    INDEX($C$36:$C$46, MATCH(I23, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J23 <= 
+    INDEX($D$36:$D$46, MATCH(I23, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J23 >= 
+    INDEX($E$36:$E$46, MATCH(I23, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K24: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J24 <= 
+    INDEX($B$36:$B$46, MATCH(I24, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J24 <= 
+    INDEX($C$36:$C$46, MATCH(I24, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J24 <= 
+    INDEX($D$36:$D$46, MATCH(I24, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J24 >= 
+    INDEX($E$36:$E$46, MATCH(I24, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K25: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J25 <= 
+    INDEX($B$36:$B$46, MATCH(I25, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J25 <= 
+    INDEX($C$36:$C$46, MATCH(I25, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J25 <= 
+    INDEX($D$36:$D$46, MATCH(I25, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J25 >= 
+    INDEX($E$36:$E$46, MATCH(I25, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K26: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J26 <= 
+    INDEX($B$36:$B$46, MATCH(I26, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J26 <= 
+    INDEX($C$36:$C$46, MATCH(I26, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J26 <= 
+    INDEX($D$36:$D$46, MATCH(I26, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J26 >= 
+    INDEX($E$36:$E$46, MATCH(I26, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K27: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J27 <= 
+    INDEX($B$36:$B$46, MATCH(I27, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J27 <= 
+    INDEX($C$36:$C$46, MATCH(I27, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J27 <= 
+    INDEX($D$36:$D$46, MATCH(I27, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J27 >= 
+    INDEX($E$36:$E$46, MATCH(I27, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+K40: (Moderate, 33 chars)
+  =COUNT
+  IF(K$5:K$34, "Progressing")
+
+K39: (Moderate, 31 chars)
+  =COUNT
+  IF(K$5:K$34, "Beginning")
+
+K41: (Moderate, 31 chars)
+  =COUNT
+  IF(K$5:K$34, "Achieving")
+
+K42: (Moderate, 31 chars)
+  =COUNT
+  IF(K$5:K$34, "Excelling")
+
+--- SIMPLE FORMULAS (97 total) ---
+I10: ='Class List'!$C10
+I11: ='Class List'!$C11
+I12: ='Class List'!$C12
+I13: ='Class List'!$C13
+I14: ='Class List'!$C14
+
+SHEET: Gymnastics
+====================================================================================================
+Total: 127 | Simple: 93 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+H5: (Complex, 510 chars)
+  =IFERROR(
+   
+  IF(G5 <= 
+    INDEX($B$44:$B$50, MATCH(F5, $A$44:$A$50, 0)), "Beginning",
+      
+  IF(AND(G5 >= 
+    INDEX($C$44:$C$50, MATCH(F5, $A$44:$A$50, 0)),
+             G5 <= 
+    INDEX($D$44:$D$50, MATCH(F5, $A$44:$A$50, 0))), "Progressing",
+         
+  IF(AND(G5 >= 
+    INDEX($E$44:$E$50, MATCH(F5, $A$44:$A$50, 0)),
+                G5 <= 
+    INDEX($F$44:$F$50, MATCH(F5, $A$44:$A$50, 0))), "Achieving",
+            
+  IF(G5 >= 
+    INDEX($G$44:$G$50, MATCH(F5, $A$44:$A$50, 0)), "Excelling",
+               "Error")))),
+   "Age Not Found")
+
+H6: (Complex, 510 chars)
+  =IFERROR(
+   
+  IF(G6 <= 
+    INDEX($B$44:$B$50, MATCH(F6, $A$44:$A$50, 0)), "Beginning",
+      
+  IF(AND(G6 >= 
+    INDEX($C$44:$C$50, MATCH(F6, $A$44:$A$50, 0)),
+             G6 <= 
+    INDEX($D$44:$D$50, MATCH(F6, $A$44:$A$50, 0))), "Progressing",
+         
+  IF(AND(G6 >= 
+    INDEX($E$44:$E$50, MATCH(F6, $A$44:$A$50, 0)),
+                G6 <= 
+    INDEX($F$44:$F$50, MATCH(F6, $A$44:$A$50, 0))), "Achieving",
+            
+  IF(G6 >= 
+    INDEX($G$44:$G$50, MATCH(F6, $A$44:$A$50, 0)), "Excelling",
+               "Error")))),
+   "Age Not Found")
+
+H10: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G10 <= 
+    INDEX($B$44:$B$50, MATCH(F10, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G10 >= 
+    INDEX($C$44:$C$50, MATCH(F10, $A$44:$A$50, 0)),
+G10 <= 
+    INDEX($D$44:$D$50, MATCH(F10, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G10 >= 
+    INDEX($E$44:$E$50, MATCH(F10, $A$44:$A$50, 0)),
+G10 <= 
+    INDEX($F$44:$F$50, MATCH(F10, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G10 >= 
+    INDEX($G$44:$G$50, MATCH(F10, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H11: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G11 <= 
+    INDEX($B$44:$B$50, MATCH(F11, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G11 >= 
+    INDEX($C$44:$C$50, MATCH(F11, $A$44:$A$50, 0)),
+G11 <= 
+    INDEX($D$44:$D$50, MATCH(F11, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G11 >= 
+    INDEX($E$44:$E$50, MATCH(F11, $A$44:$A$50, 0)),
+G11 <= 
+    INDEX($F$44:$F$50, MATCH(F11, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G11 >= 
+    INDEX($G$44:$G$50, MATCH(F11, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H12: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G12 <= 
+    INDEX($B$44:$B$50, MATCH(F12, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G12 >= 
+    INDEX($C$44:$C$50, MATCH(F12, $A$44:$A$50, 0)),
+G12 <= 
+    INDEX($D$44:$D$50, MATCH(F12, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G12 >= 
+    INDEX($E$44:$E$50, MATCH(F12, $A$44:$A$50, 0)),
+G12 <= 
+    INDEX($F$44:$F$50, MATCH(F12, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G12 >= 
+    INDEX($G$44:$G$50, MATCH(F12, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H13: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G13 <= 
+    INDEX($B$44:$B$50, MATCH(F13, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G13 >= 
+    INDEX($C$44:$C$50, MATCH(F13, $A$44:$A$50, 0)),
+G13 <= 
+    INDEX($D$44:$D$50, MATCH(F13, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G13 >= 
+    INDEX($E$44:$E$50, MATCH(F13, $A$44:$A$50, 0)),
+G13 <= 
+    INDEX($F$44:$F$50, MATCH(F13, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G13 >= 
+    INDEX($G$44:$G$50, MATCH(F13, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H14: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G14 <= 
+    INDEX($B$44:$B$50, MATCH(F14, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G14 >= 
+    INDEX($C$44:$C$50, MATCH(F14, $A$44:$A$50, 0)),
+G14 <= 
+    INDEX($D$44:$D$50, MATCH(F14, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G14 >= 
+    INDEX($E$44:$E$50, MATCH(F14, $A$44:$A$50, 0)),
+G14 <= 
+    INDEX($F$44:$F$50, MATCH(F14, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G14 >= 
+    INDEX($G$44:$G$50, MATCH(F14, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H15: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G15 <= 
+    INDEX($B$44:$B$50, MATCH(F15, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G15 >= 
+    INDEX($C$44:$C$50, MATCH(F15, $A$44:$A$50, 0)),
+G15 <= 
+    INDEX($D$44:$D$50, MATCH(F15, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G15 >= 
+    INDEX($E$44:$E$50, MATCH(F15, $A$44:$A$50, 0)),
+G15 <= 
+    INDEX($F$44:$F$50, MATCH(F15, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G15 >= 
+    INDEX($G$44:$G$50, MATCH(F15, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H16: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G16 <= 
+    INDEX($B$44:$B$50, MATCH(F16, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G16 >= 
+    INDEX($C$44:$C$50, MATCH(F16, $A$44:$A$50, 0)),
+G16 <= 
+    INDEX($D$44:$D$50, MATCH(F16, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G16 >= 
+    INDEX($E$44:$E$50, MATCH(F16, $A$44:$A$50, 0)),
+G16 <= 
+    INDEX($F$44:$F$50, MATCH(F16, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G16 >= 
+    INDEX($G$44:$G$50, MATCH(F16, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H17: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G17 <= 
+    INDEX($B$44:$B$50, MATCH(F17, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G17 >= 
+    INDEX($C$44:$C$50, MATCH(F17, $A$44:$A$50, 0)),
+G17 <= 
+    INDEX($D$44:$D$50, MATCH(F17, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G17 >= 
+    INDEX($E$44:$E$50, MATCH(F17, $A$44:$A$50, 0)),
+G17 <= 
+    INDEX($F$44:$F$50, MATCH(F17, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G17 >= 
+    INDEX($G$44:$G$50, MATCH(F17, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H18: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G18 <= 
+    INDEX($B$44:$B$50, MATCH(F18, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G18 >= 
+    INDEX($C$44:$C$50, MATCH(F18, $A$44:$A$50, 0)),
+G18 <= 
+    INDEX($D$44:$D$50, MATCH(F18, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G18 >= 
+    INDEX($E$44:$E$50, MATCH(F18, $A$44:$A$50, 0)),
+G18 <= 
+    INDEX($F$44:$F$50, MATCH(F18, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G18 >= 
+    INDEX($G$44:$G$50, MATCH(F18, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H19: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G19 <= 
+    INDEX($B$44:$B$50, MATCH(F19, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G19 >= 
+    INDEX($C$44:$C$50, MATCH(F19, $A$44:$A$50, 0)),
+G19 <= 
+    INDEX($D$44:$D$50, MATCH(F19, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G19 >= 
+    INDEX($E$44:$E$50, MATCH(F19, $A$44:$A$50, 0)),
+G19 <= 
+    INDEX($F$44:$F$50, MATCH(F19, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G19 >= 
+    INDEX($G$44:$G$50, MATCH(F19, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H20: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G20 <= 
+    INDEX($B$44:$B$50, MATCH(F20, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G20 >= 
+    INDEX($C$44:$C$50, MATCH(F20, $A$44:$A$50, 0)),
+G20 <= 
+    INDEX($D$44:$D$50, MATCH(F20, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G20 >= 
+    INDEX($E$44:$E$50, MATCH(F20, $A$44:$A$50, 0)),
+G20 <= 
+    INDEX($F$44:$F$50, MATCH(F20, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G20 >= 
+    INDEX($G$44:$G$50, MATCH(F20, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H21: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G21 <= 
+    INDEX($B$44:$B$50, MATCH(F21, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G21 >= 
+    INDEX($C$44:$C$50, MATCH(F21, $A$44:$A$50, 0)),
+G21 <= 
+    INDEX($D$44:$D$50, MATCH(F21, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G21 >= 
+    INDEX($E$44:$E$50, MATCH(F21, $A$44:$A$50, 0)),
+G21 <= 
+    INDEX($F$44:$F$50, MATCH(F21, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G21 >= 
+    INDEX($G$44:$G$50, MATCH(F21, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H22: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G22 <= 
+    INDEX($B$44:$B$50, MATCH(F22, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G22 >= 
+    INDEX($C$44:$C$50, MATCH(F22, $A$44:$A$50, 0)),
+G22 <= 
+    INDEX($D$44:$D$50, MATCH(F22, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G22 >= 
+    INDEX($E$44:$E$50, MATCH(F22, $A$44:$A$50, 0)),
+G22 <= 
+    INDEX($F$44:$F$50, MATCH(F22, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G22 >= 
+    INDEX($G$44:$G$50, MATCH(F22, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H23: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G23 <= 
+    INDEX($B$44:$B$50, MATCH(F23, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G23 >= 
+    INDEX($C$44:$C$50, MATCH(F23, $A$44:$A$50, 0)),
+G23 <= 
+    INDEX($D$44:$D$50, MATCH(F23, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G23 >= 
+    INDEX($E$44:$E$50, MATCH(F23, $A$44:$A$50, 0)),
+G23 <= 
+    INDEX($F$44:$F$50, MATCH(F23, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G23 >= 
+    INDEX($G$44:$G$50, MATCH(F23, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H24: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G24 <= 
+    INDEX($B$44:$B$50, MATCH(F24, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G24 >= 
+    INDEX($C$44:$C$50, MATCH(F24, $A$44:$A$50, 0)),
+G24 <= 
+    INDEX($D$44:$D$50, MATCH(F24, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G24 >= 
+    INDEX($E$44:$E$50, MATCH(F24, $A$44:$A$50, 0)),
+G24 <= 
+    INDEX($F$44:$F$50, MATCH(F24, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G24 >= 
+    INDEX($G$44:$G$50, MATCH(F24, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H25: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G25 <= 
+    INDEX($B$44:$B$50, MATCH(F25, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G25 >= 
+    INDEX($C$44:$C$50, MATCH(F25, $A$44:$A$50, 0)),
+G25 <= 
+    INDEX($D$44:$D$50, MATCH(F25, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G25 >= 
+    INDEX($E$44:$E$50, MATCH(F25, $A$44:$A$50, 0)),
+G25 <= 
+    INDEX($F$44:$F$50, MATCH(F25, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G25 >= 
+    INDEX($G$44:$G$50, MATCH(F25, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H26: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G26 <= 
+    INDEX($B$44:$B$50, MATCH(F26, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G26 >= 
+    INDEX($C$44:$C$50, MATCH(F26, $A$44:$A$50, 0)),
+G26 <= 
+    INDEX($D$44:$D$50, MATCH(F26, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G26 >= 
+    INDEX($E$44:$E$50, MATCH(F26, $A$44:$A$50, 0)),
+G26 <= 
+    INDEX($F$44:$F$50, MATCH(F26, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G26 >= 
+    INDEX($G$44:$G$50, MATCH(F26, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+H27: (Complex, 445 chars)
+  =IFERROR(
+
+  IF(G27 <= 
+    INDEX($B$44:$B$50, MATCH(F27, $A$44:$A$50, 0)), "Beginning",
+
+  IF(AND(G27 >= 
+    INDEX($C$44:$C$50, MATCH(F27, $A$44:$A$50, 0)),
+G27 <= 
+    INDEX($D$44:$D$50, MATCH(F27, $A$44:$A$50, 0))), "Progressing",
+
+  IF(AND(G27 >= 
+    INDEX($E$44:$E$50, MATCH(F27, $A$44:$A$50, 0)),
+G27 <= 
+    INDEX($F$44:$F$50, MATCH(F27, $A$44:$A$50, 0))), "Achieving",
+
+  IF(G27 >= 
+    INDEX($G$44:$G$50, MATCH(F27, $A$44:$A$50, 0)), "Excelling",
+"Error")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+H40: (Moderate, 33 chars)
+  =COUNT
+  IF(H$5:H$34, "Progressing")
+
+H39: (Moderate, 31 chars)
+  =COUNT
+  IF(H$5:H$34, "Beginning")
+
+H41: (Moderate, 31 chars)
+  =COUNT
+  IF(H$5:H$34, "Achieving")
+
+H42: (Moderate, 31 chars)
+  =COUNT
+  IF(H$5:H$34, "Excelling")
+
+--- SIMPLE FORMULAS (93 total) ---
+F10: ='Class List'!$C10
+F11: ='Class List'!$C11
+F12: ='Class List'!$C12
+F13: ='Class List'!$C13
+F14: ='Class List'!$C14
+
+SHEET: Kick
+====================================================================================================
+Total: 131 | Simple: 97 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+K5: (Complex, 350 chars)
+  =IFERROR(
+   
+  IF(J5 <= 
+    INDEX($B$36:$B$46, MATCH(I5, $A$36:$A$46, 0)), "Beginning",
+      
+  IF(J5 <= 
+    INDEX($C$36:$C$46, MATCH(I5, $A$36:$A$46, 0)), "Progressing",
+         
+  IF(J5 <= 
+    INDEX($D$36:$D$46, MATCH(I5, $A$36:$A$46, 0)), "Achieving",
+            
+  IF(J5 >= 
+    INDEX($E$36:$E$46, MATCH(I5, $A$36:$A$46, 0)), "Excelling", "Error")))),
+   "Age Not Found")
+
+K10: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J10 <= 
+    INDEX($B$36:$B$46, MATCH(I10, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J10 <= 
+    INDEX($C$36:$C$46, MATCH(I10, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J10 <= 
+    INDEX($D$36:$D$46, MATCH(I10, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J10 >= 
+    INDEX($E$36:$E$46, MATCH(I10, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K11: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J11 <= 
+    INDEX($B$36:$B$46, MATCH(I11, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J11 <= 
+    INDEX($C$36:$C$46, MATCH(I11, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J11 <= 
+    INDEX($D$36:$D$46, MATCH(I11, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J11 >= 
+    INDEX($E$36:$E$46, MATCH(I11, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K12: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J12 <= 
+    INDEX($B$36:$B$46, MATCH(I12, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J12 <= 
+    INDEX($C$36:$C$46, MATCH(I12, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J12 <= 
+    INDEX($D$36:$D$46, MATCH(I12, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J12 >= 
+    INDEX($E$36:$E$46, MATCH(I12, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K13: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J13 <= 
+    INDEX($B$36:$B$46, MATCH(I13, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J13 <= 
+    INDEX($C$36:$C$46, MATCH(I13, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J13 <= 
+    INDEX($D$36:$D$46, MATCH(I13, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J13 >= 
+    INDEX($E$36:$E$46, MATCH(I13, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K14: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J14 <= 
+    INDEX($B$36:$B$46, MATCH(I14, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J14 <= 
+    INDEX($C$36:$C$46, MATCH(I14, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J14 <= 
+    INDEX($D$36:$D$46, MATCH(I14, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J14 >= 
+    INDEX($E$36:$E$46, MATCH(I14, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K15: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J15 <= 
+    INDEX($B$36:$B$46, MATCH(I15, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J15 <= 
+    INDEX($C$36:$C$46, MATCH(I15, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J15 <= 
+    INDEX($D$36:$D$46, MATCH(I15, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J15 >= 
+    INDEX($E$36:$E$46, MATCH(I15, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K16: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J16 <= 
+    INDEX($B$36:$B$46, MATCH(I16, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J16 <= 
+    INDEX($C$36:$C$46, MATCH(I16, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J16 <= 
+    INDEX($D$36:$D$46, MATCH(I16, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J16 >= 
+    INDEX($E$36:$E$46, MATCH(I16, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K17: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J17 <= 
+    INDEX($B$36:$B$46, MATCH(I17, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J17 <= 
+    INDEX($C$36:$C$46, MATCH(I17, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J17 <= 
+    INDEX($D$36:$D$46, MATCH(I17, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J17 >= 
+    INDEX($E$36:$E$46, MATCH(I17, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K18: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J18 <= 
+    INDEX($B$36:$B$46, MATCH(I18, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J18 <= 
+    INDEX($C$36:$C$46, MATCH(I18, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J18 <= 
+    INDEX($D$36:$D$46, MATCH(I18, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J18 >= 
+    INDEX($E$36:$E$46, MATCH(I18, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K19: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J19 <= 
+    INDEX($B$36:$B$46, MATCH(I19, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J19 <= 
+    INDEX($C$36:$C$46, MATCH(I19, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J19 <= 
+    INDEX($D$36:$D$46, MATCH(I19, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J19 >= 
+    INDEX($E$36:$E$46, MATCH(I19, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K20: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J20 <= 
+    INDEX($B$36:$B$46, MATCH(I20, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J20 <= 
+    INDEX($C$36:$C$46, MATCH(I20, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J20 <= 
+    INDEX($D$36:$D$46, MATCH(I20, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J20 >= 
+    INDEX($E$36:$E$46, MATCH(I20, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K21: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J21 <= 
+    INDEX($B$36:$B$46, MATCH(I21, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J21 <= 
+    INDEX($C$36:$C$46, MATCH(I21, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J21 <= 
+    INDEX($D$36:$D$46, MATCH(I21, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J21 >= 
+    INDEX($E$36:$E$46, MATCH(I21, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K22: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J22 <= 
+    INDEX($B$36:$B$46, MATCH(I22, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J22 <= 
+    INDEX($C$36:$C$46, MATCH(I22, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J22 <= 
+    INDEX($D$36:$D$46, MATCH(I22, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J22 >= 
+    INDEX($E$36:$E$46, MATCH(I22, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K23: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J23 <= 
+    INDEX($B$36:$B$46, MATCH(I23, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J23 <= 
+    INDEX($C$36:$C$46, MATCH(I23, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J23 <= 
+    INDEX($D$36:$D$46, MATCH(I23, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J23 >= 
+    INDEX($E$36:$E$46, MATCH(I23, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K24: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J24 <= 
+    INDEX($B$36:$B$46, MATCH(I24, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J24 <= 
+    INDEX($C$36:$C$46, MATCH(I24, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J24 <= 
+    INDEX($D$36:$D$46, MATCH(I24, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J24 >= 
+    INDEX($E$36:$E$46, MATCH(I24, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K25: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J25 <= 
+    INDEX($B$36:$B$46, MATCH(I25, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J25 <= 
+    INDEX($C$36:$C$46, MATCH(I25, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J25 <= 
+    INDEX($D$36:$D$46, MATCH(I25, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J25 >= 
+    INDEX($E$36:$E$46, MATCH(I25, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K26: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J26 <= 
+    INDEX($B$36:$B$46, MATCH(I26, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J26 <= 
+    INDEX($C$36:$C$46, MATCH(I26, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J26 <= 
+    INDEX($D$36:$D$46, MATCH(I26, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J26 >= 
+    INDEX($E$36:$E$46, MATCH(I26, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K27: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J27 <= 
+    INDEX($B$36:$B$46, MATCH(I27, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J27 <= 
+    INDEX($C$36:$C$46, MATCH(I27, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J27 <= 
+    INDEX($D$36:$D$46, MATCH(I27, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J27 >= 
+    INDEX($E$36:$E$46, MATCH(I27, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+K28: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(J28 <= 
+    INDEX($B$36:$B$46, MATCH(I28, $A$36:$A$46, 0)), "Beginning",
+
+  IF(J28 <= 
+    INDEX($C$36:$C$46, MATCH(I28, $A$36:$A$46, 0)), "Progressing",
+
+  IF(J28 <= 
+    INDEX($D$36:$D$46, MATCH(I28, $A$36:$A$46, 0)), "Achieving",
+
+  IF(J28 >= 
+    INDEX($E$36:$E$46, MATCH(I28, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+K40: (Moderate, 33 chars)
+  =COUNT
+  IF(K$5:K$34, "Progressing")
+
+K39: (Moderate, 31 chars)
+  =COUNT
+  IF(K$5:K$34, "Beginning")
+
+K41: (Moderate, 31 chars)
+  =COUNT
+  IF(K$5:K$34, "Achieving")
+
+K42: (Moderate, 31 chars)
+  =COUNT
+  IF(K$5:K$34, "Excelling")
+
+--- SIMPLE FORMULAS (97 total) ---
+I10: ='Class List'!$C10
+I11: ='Class List'!$C11
+I12: ='Class List'!$C12
+I13: ='Class List'!$C13
+I14: ='Class List'!$C14
+
+SHEET: Leap
+====================================================================================================
+Total: 129 | Simple: 95 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+I5: (Complex, 350 chars)
+  =IFERROR(
+   
+  IF(H5 <= 
+    INDEX($B$36:$B$46, MATCH(G5, $A$36:$A$46, 0)), "Beginning",
+      
+  IF(H5 <= 
+    INDEX($C$36:$C$46, MATCH(G5, $A$36:$A$46, 0)), "Progressing",
+         
+  IF(H5 <= 
+    INDEX($D$36:$D$46, MATCH(G5, $A$36:$A$46, 0)), "Achieving",
+            
+  IF(H5 >= 
+    INDEX($E$36:$E$46, MATCH(G5, $A$36:$A$46, 0)), "Excelling", "Error")))),
+   "Age Not Found")
+
+I10: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H10 <= 
+    INDEX($B$36:$B$46, MATCH(G10, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H10 <= 
+    INDEX($C$36:$C$46, MATCH(G10, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H10 <= 
+    INDEX($D$36:$D$46, MATCH(G10, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H10 >= 
+    INDEX($E$36:$E$46, MATCH(G10, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I11: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H11 <= 
+    INDEX($B$36:$B$46, MATCH(G11, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H11 <= 
+    INDEX($C$36:$C$46, MATCH(G11, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H11 <= 
+    INDEX($D$36:$D$46, MATCH(G11, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H11 >= 
+    INDEX($E$36:$E$46, MATCH(G11, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I12: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H12 <= 
+    INDEX($B$36:$B$46, MATCH(G12, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H12 <= 
+    INDEX($C$36:$C$46, MATCH(G12, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H12 <= 
+    INDEX($D$36:$D$46, MATCH(G12, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H12 >= 
+    INDEX($E$36:$E$46, MATCH(G12, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I13: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H13 <= 
+    INDEX($B$36:$B$46, MATCH(G13, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H13 <= 
+    INDEX($C$36:$C$46, MATCH(G13, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H13 <= 
+    INDEX($D$36:$D$46, MATCH(G13, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H13 >= 
+    INDEX($E$36:$E$46, MATCH(G13, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I14: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H14 <= 
+    INDEX($B$36:$B$46, MATCH(G14, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H14 <= 
+    INDEX($C$36:$C$46, MATCH(G14, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H14 <= 
+    INDEX($D$36:$D$46, MATCH(G14, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H14 >= 
+    INDEX($E$36:$E$46, MATCH(G14, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I15: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H15 <= 
+    INDEX($B$36:$B$46, MATCH(G15, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H15 <= 
+    INDEX($C$36:$C$46, MATCH(G15, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H15 <= 
+    INDEX($D$36:$D$46, MATCH(G15, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H15 >= 
+    INDEX($E$36:$E$46, MATCH(G15, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I16: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H16 <= 
+    INDEX($B$36:$B$46, MATCH(G16, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H16 <= 
+    INDEX($C$36:$C$46, MATCH(G16, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H16 <= 
+    INDEX($D$36:$D$46, MATCH(G16, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H16 >= 
+    INDEX($E$36:$E$46, MATCH(G16, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I17: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H17 <= 
+    INDEX($B$36:$B$46, MATCH(G17, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H17 <= 
+    INDEX($C$36:$C$46, MATCH(G17, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H17 <= 
+    INDEX($D$36:$D$46, MATCH(G17, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H17 >= 
+    INDEX($E$36:$E$46, MATCH(G17, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I18: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H18 <= 
+    INDEX($B$36:$B$46, MATCH(G18, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H18 <= 
+    INDEX($C$36:$C$46, MATCH(G18, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H18 <= 
+    INDEX($D$36:$D$46, MATCH(G18, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H18 >= 
+    INDEX($E$36:$E$46, MATCH(G18, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I19: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H19 <= 
+    INDEX($B$36:$B$46, MATCH(G19, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H19 <= 
+    INDEX($C$36:$C$46, MATCH(G19, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H19 <= 
+    INDEX($D$36:$D$46, MATCH(G19, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H19 >= 
+    INDEX($E$36:$E$46, MATCH(G19, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I20: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H20 <= 
+    INDEX($B$36:$B$46, MATCH(G20, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H20 <= 
+    INDEX($C$36:$C$46, MATCH(G20, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H20 <= 
+    INDEX($D$36:$D$46, MATCH(G20, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H20 >= 
+    INDEX($E$36:$E$46, MATCH(G20, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I21: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H21 <= 
+    INDEX($B$36:$B$46, MATCH(G21, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H21 <= 
+    INDEX($C$36:$C$46, MATCH(G21, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H21 <= 
+    INDEX($D$36:$D$46, MATCH(G21, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H21 >= 
+    INDEX($E$36:$E$46, MATCH(G21, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I22: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H22 <= 
+    INDEX($B$36:$B$46, MATCH(G22, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H22 <= 
+    INDEX($C$36:$C$46, MATCH(G22, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H22 <= 
+    INDEX($D$36:$D$46, MATCH(G22, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H22 >= 
+    INDEX($E$36:$E$46, MATCH(G22, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I23: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H23 <= 
+    INDEX($B$36:$B$46, MATCH(G23, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H23 <= 
+    INDEX($C$36:$C$46, MATCH(G23, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H23 <= 
+    INDEX($D$36:$D$46, MATCH(G23, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H23 >= 
+    INDEX($E$36:$E$46, MATCH(G23, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I24: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H24 <= 
+    INDEX($B$36:$B$46, MATCH(G24, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H24 <= 
+    INDEX($C$36:$C$46, MATCH(G24, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H24 <= 
+    INDEX($D$36:$D$46, MATCH(G24, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H24 >= 
+    INDEX($E$36:$E$46, MATCH(G24, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I25: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H25 <= 
+    INDEX($B$36:$B$46, MATCH(G25, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H25 <= 
+    INDEX($C$36:$C$46, MATCH(G25, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H25 <= 
+    INDEX($D$36:$D$46, MATCH(G25, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H25 >= 
+    INDEX($E$36:$E$46, MATCH(G25, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I26: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H26 <= 
+    INDEX($B$36:$B$46, MATCH(G26, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H26 <= 
+    INDEX($C$36:$C$46, MATCH(G26, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H26 <= 
+    INDEX($D$36:$D$46, MATCH(G26, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H26 >= 
+    INDEX($E$36:$E$46, MATCH(G26, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I27: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H27 <= 
+    INDEX($B$36:$B$46, MATCH(G27, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H27 <= 
+    INDEX($C$36:$C$46, MATCH(G27, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H27 <= 
+    INDEX($D$36:$D$46, MATCH(G27, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H27 >= 
+    INDEX($E$36:$E$46, MATCH(G27, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I28: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H28 <= 
+    INDEX($B$36:$B$46, MATCH(G28, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H28 <= 
+    INDEX($C$36:$C$46, MATCH(G28, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H28 <= 
+    INDEX($D$36:$D$46, MATCH(G28, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H28 >= 
+    INDEX($E$36:$E$46, MATCH(G28, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+I40: (Moderate, 33 chars)
+  =COUNT
+  IF(I$5:I$34, "Progressing")
+
+I39: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Beginning")
+
+I41: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Achieving")
+
+I42: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Excelling")
+
+--- SIMPLE FORMULAS (95 total) ---
+G10: ='Class List'!$C10
+G11: ='Class List'!$C11
+G12: ='Class List'!$C12
+G13: ='Class List'!$C13
+G14: ='Class List'!$C14
+
+SHEET: Overhand throw
+====================================================================================================
+Total: 130 | Simple: 96 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+J5: (Complex, 350 chars)
+  =IFERROR(
+   
+  IF(I5 <= 
+    INDEX($B$36:$B$46, MATCH(H5, $A$36:$A$46, 0)), "Beginning",
+      
+  IF(I5 <= 
+    INDEX($C$36:$C$46, MATCH(H5, $A$36:$A$46, 0)), "Progressing",
+         
+  IF(I5 <= 
+    INDEX($D$36:$D$46, MATCH(H5, $A$36:$A$46, 0)), "Achieving",
+            
+  IF(I5 >= 
+    INDEX($E$36:$E$46, MATCH(H5, $A$36:$A$46, 0)), "Excelling", "Error")))),
+   "Age Not Found")
+
+J10: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I10 <= 
+    INDEX($B$36:$B$46, MATCH(H10, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I10 <= 
+    INDEX($C$36:$C$46, MATCH(H10, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I10 <= 
+    INDEX($D$36:$D$46, MATCH(H10, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I10 >= 
+    INDEX($E$36:$E$46, MATCH(H10, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J11: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I11 <= 
+    INDEX($B$36:$B$46, MATCH(H11, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I11 <= 
+    INDEX($C$36:$C$46, MATCH(H11, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I11 <= 
+    INDEX($D$36:$D$46, MATCH(H11, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I11 >= 
+    INDEX($E$36:$E$46, MATCH(H11, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J12: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I12 <= 
+    INDEX($B$36:$B$46, MATCH(H12, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I12 <= 
+    INDEX($C$36:$C$46, MATCH(H12, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I12 <= 
+    INDEX($D$36:$D$46, MATCH(H12, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I12 >= 
+    INDEX($E$36:$E$46, MATCH(H12, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J13: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I13 <= 
+    INDEX($B$36:$B$46, MATCH(H13, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I13 <= 
+    INDEX($C$36:$C$46, MATCH(H13, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I13 <= 
+    INDEX($D$36:$D$46, MATCH(H13, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I13 >= 
+    INDEX($E$36:$E$46, MATCH(H13, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J14: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I14 <= 
+    INDEX($B$36:$B$46, MATCH(H14, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I14 <= 
+    INDEX($C$36:$C$46, MATCH(H14, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I14 <= 
+    INDEX($D$36:$D$46, MATCH(H14, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I14 >= 
+    INDEX($E$36:$E$46, MATCH(H14, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J15: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I15 <= 
+    INDEX($B$36:$B$46, MATCH(H15, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I15 <= 
+    INDEX($C$36:$C$46, MATCH(H15, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I15 <= 
+    INDEX($D$36:$D$46, MATCH(H15, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I15 >= 
+    INDEX($E$36:$E$46, MATCH(H15, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J16: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I16 <= 
+    INDEX($B$36:$B$46, MATCH(H16, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I16 <= 
+    INDEX($C$36:$C$46, MATCH(H16, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I16 <= 
+    INDEX($D$36:$D$46, MATCH(H16, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I16 >= 
+    INDEX($E$36:$E$46, MATCH(H16, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J17: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I17 <= 
+    INDEX($B$36:$B$46, MATCH(H17, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I17 <= 
+    INDEX($C$36:$C$46, MATCH(H17, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I17 <= 
+    INDEX($D$36:$D$46, MATCH(H17, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I17 >= 
+    INDEX($E$36:$E$46, MATCH(H17, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J18: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I18 <= 
+    INDEX($B$36:$B$46, MATCH(H18, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I18 <= 
+    INDEX($C$36:$C$46, MATCH(H18, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I18 <= 
+    INDEX($D$36:$D$46, MATCH(H18, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I18 >= 
+    INDEX($E$36:$E$46, MATCH(H18, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J19: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I19 <= 
+    INDEX($B$36:$B$46, MATCH(H19, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I19 <= 
+    INDEX($C$36:$C$46, MATCH(H19, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I19 <= 
+    INDEX($D$36:$D$46, MATCH(H19, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I19 >= 
+    INDEX($E$36:$E$46, MATCH(H19, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J20: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I20 <= 
+    INDEX($B$36:$B$46, MATCH(H20, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I20 <= 
+    INDEX($C$36:$C$46, MATCH(H20, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I20 <= 
+    INDEX($D$36:$D$46, MATCH(H20, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I20 >= 
+    INDEX($E$36:$E$46, MATCH(H20, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J21: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I21 <= 
+    INDEX($B$36:$B$46, MATCH(H21, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I21 <= 
+    INDEX($C$36:$C$46, MATCH(H21, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I21 <= 
+    INDEX($D$36:$D$46, MATCH(H21, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I21 >= 
+    INDEX($E$36:$E$46, MATCH(H21, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J22: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I22 <= 
+    INDEX($B$36:$B$46, MATCH(H22, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I22 <= 
+    INDEX($C$36:$C$46, MATCH(H22, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I22 <= 
+    INDEX($D$36:$D$46, MATCH(H22, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I22 >= 
+    INDEX($E$36:$E$46, MATCH(H22, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J23: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I23 <= 
+    INDEX($B$36:$B$46, MATCH(H23, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I23 <= 
+    INDEX($C$36:$C$46, MATCH(H23, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I23 <= 
+    INDEX($D$36:$D$46, MATCH(H23, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I23 >= 
+    INDEX($E$36:$E$46, MATCH(H23, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J24: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I24 <= 
+    INDEX($B$36:$B$46, MATCH(H24, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I24 <= 
+    INDEX($C$36:$C$46, MATCH(H24, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I24 <= 
+    INDEX($D$36:$D$46, MATCH(H24, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I24 >= 
+    INDEX($E$36:$E$46, MATCH(H24, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J25: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I25 <= 
+    INDEX($B$36:$B$46, MATCH(H25, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I25 <= 
+    INDEX($C$36:$C$46, MATCH(H25, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I25 <= 
+    INDEX($D$36:$D$46, MATCH(H25, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I25 >= 
+    INDEX($E$36:$E$46, MATCH(H25, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J26: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I26 <= 
+    INDEX($B$36:$B$46, MATCH(H26, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I26 <= 
+    INDEX($C$36:$C$46, MATCH(H26, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I26 <= 
+    INDEX($D$36:$D$46, MATCH(H26, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I26 >= 
+    INDEX($E$36:$E$46, MATCH(H26, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J27: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I27 <= 
+    INDEX($B$36:$B$46, MATCH(H27, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I27 <= 
+    INDEX($C$36:$C$46, MATCH(H27, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I27 <= 
+    INDEX($D$36:$D$46, MATCH(H27, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I27 >= 
+    INDEX($E$36:$E$46, MATCH(H27, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+J28: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(I28 <= 
+    INDEX($B$36:$B$46, MATCH(H28, $A$36:$A$46, 0)), "Beginning",
+
+  IF(I28 <= 
+    INDEX($C$36:$C$46, MATCH(H28, $A$36:$A$46, 0)), "Progressing",
+
+  IF(I28 <= 
+    INDEX($D$36:$D$46, MATCH(H28, $A$36:$A$46, 0)), "Achieving",
+
+  IF(I28 >= 
+    INDEX($E$36:$E$46, MATCH(H28, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+J40: (Moderate, 33 chars)
+  =COUNT
+  IF(J$5:J$34, "Progressing")
+
+J39: (Moderate, 31 chars)
+  =COUNT
+  IF(J$5:J$34, "Beginning")
+
+J41: (Moderate, 31 chars)
+  =COUNT
+  IF(J$5:J$34, "Achieving")
+
+J42: (Moderate, 31 chars)
+  =COUNT
+  IF(J$5:J$34, "Excelling")
+
+--- SIMPLE FORMULAS (96 total) ---
+H10: ='Class List'!$C10
+H11: ='Class List'!$C11
+H12: ='Class List'!$C12
+H13: ='Class List'!$C13
+H14: ='Class List'!$C14
+
+SHEET: Punt
+====================================================================================================
+Total: 132 | Simple: 98 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+L5: (Complex, 350 chars)
+  =IFERROR(
+   
+  IF(K5 <= 
+    INDEX($B$36:$B$46, MATCH(J5, $A$36:$A$46, 0)), "Beginning",
+      
+  IF(K5 <= 
+    INDEX($C$36:$C$46, MATCH(J5, $A$36:$A$46, 0)), "Progressing",
+         
+  IF(K5 <= 
+    INDEX($D$36:$D$46, MATCH(J5, $A$36:$A$46, 0)), "Achieving",
+            
+  IF(K5 >= 
+    INDEX($E$36:$E$46, MATCH(J5, $A$36:$A$46, 0)), "Excelling", "Error")))),
+   "Age Not Found")
+
+L10: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K10 <= 
+    INDEX($B$36:$B$46, MATCH(J10, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K10 <= 
+    INDEX($C$36:$C$46, MATCH(J10, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K10 <= 
+    INDEX($D$36:$D$46, MATCH(J10, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K10 >= 
+    INDEX($E$36:$E$46, MATCH(J10, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L11: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K11 <= 
+    INDEX($B$36:$B$46, MATCH(J11, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K11 <= 
+    INDEX($C$36:$C$46, MATCH(J11, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K11 <= 
+    INDEX($D$36:$D$46, MATCH(J11, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K11 >= 
+    INDEX($E$36:$E$46, MATCH(J11, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L12: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K12 <= 
+    INDEX($B$36:$B$46, MATCH(J12, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K12 <= 
+    INDEX($C$36:$C$46, MATCH(J12, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K12 <= 
+    INDEX($D$36:$D$46, MATCH(J12, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K12 >= 
+    INDEX($E$36:$E$46, MATCH(J12, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L13: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K13 <= 
+    INDEX($B$36:$B$46, MATCH(J13, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K13 <= 
+    INDEX($C$36:$C$46, MATCH(J13, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K13 <= 
+    INDEX($D$36:$D$46, MATCH(J13, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K13 >= 
+    INDEX($E$36:$E$46, MATCH(J13, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L14: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K14 <= 
+    INDEX($B$36:$B$46, MATCH(J14, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K14 <= 
+    INDEX($C$36:$C$46, MATCH(J14, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K14 <= 
+    INDEX($D$36:$D$46, MATCH(J14, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K14 >= 
+    INDEX($E$36:$E$46, MATCH(J14, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L15: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K15 <= 
+    INDEX($B$36:$B$46, MATCH(J15, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K15 <= 
+    INDEX($C$36:$C$46, MATCH(J15, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K15 <= 
+    INDEX($D$36:$D$46, MATCH(J15, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K15 >= 
+    INDEX($E$36:$E$46, MATCH(J15, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L16: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K16 <= 
+    INDEX($B$36:$B$46, MATCH(J16, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K16 <= 
+    INDEX($C$36:$C$46, MATCH(J16, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K16 <= 
+    INDEX($D$36:$D$46, MATCH(J16, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K16 >= 
+    INDEX($E$36:$E$46, MATCH(J16, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L17: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K17 <= 
+    INDEX($B$36:$B$46, MATCH(J17, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K17 <= 
+    INDEX($C$36:$C$46, MATCH(J17, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K17 <= 
+    INDEX($D$36:$D$46, MATCH(J17, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K17 >= 
+    INDEX($E$36:$E$46, MATCH(J17, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L18: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K18 <= 
+    INDEX($B$36:$B$46, MATCH(J18, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K18 <= 
+    INDEX($C$36:$C$46, MATCH(J18, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K18 <= 
+    INDEX($D$36:$D$46, MATCH(J18, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K18 >= 
+    INDEX($E$36:$E$46, MATCH(J18, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L19: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K19 <= 
+    INDEX($B$36:$B$46, MATCH(J19, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K19 <= 
+    INDEX($C$36:$C$46, MATCH(J19, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K19 <= 
+    INDEX($D$36:$D$46, MATCH(J19, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K19 >= 
+    INDEX($E$36:$E$46, MATCH(J19, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L20: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K20 <= 
+    INDEX($B$36:$B$46, MATCH(J20, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K20 <= 
+    INDEX($C$36:$C$46, MATCH(J20, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K20 <= 
+    INDEX($D$36:$D$46, MATCH(J20, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K20 >= 
+    INDEX($E$36:$E$46, MATCH(J20, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L21: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K21 <= 
+    INDEX($B$36:$B$46, MATCH(J21, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K21 <= 
+    INDEX($C$36:$C$46, MATCH(J21, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K21 <= 
+    INDEX($D$36:$D$46, MATCH(J21, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K21 >= 
+    INDEX($E$36:$E$46, MATCH(J21, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L22: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K22 <= 
+    INDEX($B$36:$B$46, MATCH(J22, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K22 <= 
+    INDEX($C$36:$C$46, MATCH(J22, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K22 <= 
+    INDEX($D$36:$D$46, MATCH(J22, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K22 >= 
+    INDEX($E$36:$E$46, MATCH(J22, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L23: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K23 <= 
+    INDEX($B$36:$B$46, MATCH(J23, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K23 <= 
+    INDEX($C$36:$C$46, MATCH(J23, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K23 <= 
+    INDEX($D$36:$D$46, MATCH(J23, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K23 >= 
+    INDEX($E$36:$E$46, MATCH(J23, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L24: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K24 <= 
+    INDEX($B$36:$B$46, MATCH(J24, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K24 <= 
+    INDEX($C$36:$C$46, MATCH(J24, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K24 <= 
+    INDEX($D$36:$D$46, MATCH(J24, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K24 >= 
+    INDEX($E$36:$E$46, MATCH(J24, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L25: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K25 <= 
+    INDEX($B$36:$B$46, MATCH(J25, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K25 <= 
+    INDEX($C$36:$C$46, MATCH(J25, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K25 <= 
+    INDEX($D$36:$D$46, MATCH(J25, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K25 >= 
+    INDEX($E$36:$E$46, MATCH(J25, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L26: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K26 <= 
+    INDEX($B$36:$B$46, MATCH(J26, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K26 <= 
+    INDEX($C$36:$C$46, MATCH(J26, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K26 <= 
+    INDEX($D$36:$D$46, MATCH(J26, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K26 >= 
+    INDEX($E$36:$E$46, MATCH(J26, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L27: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K27 <= 
+    INDEX($B$36:$B$46, MATCH(J27, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K27 <= 
+    INDEX($C$36:$C$46, MATCH(J27, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K27 <= 
+    INDEX($D$36:$D$46, MATCH(J27, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K27 >= 
+    INDEX($E$36:$E$46, MATCH(J27, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L28: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K28 <= 
+    INDEX($B$36:$B$46, MATCH(J28, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K28 <= 
+    INDEX($C$36:$C$46, MATCH(J28, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K28 <= 
+    INDEX($D$36:$D$46, MATCH(J28, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K28 >= 
+    INDEX($E$36:$E$46, MATCH(J28, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+L40: (Moderate, 33 chars)
+  =COUNT
+  IF(L$5:L$34, "Progressing")
+
+L39: (Moderate, 31 chars)
+  =COUNT
+  IF(L$5:L$34, "Beginning")
+
+L41: (Moderate, 31 chars)
+  =COUNT
+  IF(L$5:L$34, "Achieving")
+
+L42: (Moderate, 31 chars)
+  =COUNT
+  IF(L$5:L$34, "Excelling")
+
+--- SIMPLE FORMULAS (98 total) ---
+J10: ='Class List'!$C10
+J11: ='Class List'!$C11
+J12: ='Class List'!$C12
+J13: ='Class List'!$C13
+J14: ='Class List'!$C14
+
+SHEET: Rock to stand
+====================================================================================================
+Total: 132 | Simple: 98 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+L5: (Complex, 543 chars)
+  =IFERROR(
+   
+  IF(AND(K5 >= 
+    INDEX($B$39:$B$46, MATCH(J5, $A$39:$A$46, 0)), K5 <= 
+    INDEX($C$39:$C$46, MATCH(J5, $A$39:$A$46, 0))), "Beginning",
+      
+  IF(AND(K5 >= 
+    INDEX($D$39:$D$46, MATCH(J5, $A$39:$A$46, 0)), K5 <= 
+    INDEX($E$39:$E$46, MATCH(J5, $A$39:$A$46, 0))), "Progressing",
+         
+  IF(AND(K5 >= 
+    INDEX($F$39:$F$46, MATCH(J5, $A$39:$A$46, 0)), K5 <= 
+    INDEX($G$39:$G$46, MATCH(J5, $A$39:$A$46, 0))), "Achieving",
+            
+  IF(K5 >= 
+    INDEX($H$39:$H$46, MATCH(J5, $A$39:$A$46, 0)), "Excelling",
+               "Beginning")))),
+   "Age Not Found")
+
+L6: (Complex, 543 chars)
+  =IFERROR(
+   
+  IF(AND(K6 >= 
+    INDEX($B$39:$B$46, MATCH(J6, $A$39:$A$46, 0)), K6 <= 
+    INDEX($C$39:$C$46, MATCH(J6, $A$39:$A$46, 0))), "Beginning",
+      
+  IF(AND(K6 >= 
+    INDEX($D$39:$D$46, MATCH(J6, $A$39:$A$46, 0)), K6 <= 
+    INDEX($E$39:$E$46, MATCH(J6, $A$39:$A$46, 0))), "Progressing",
+         
+  IF(AND(K6 >= 
+    INDEX($F$39:$F$46, MATCH(J6, $A$39:$A$46, 0)), K6 <= 
+    INDEX($G$39:$G$46, MATCH(J6, $A$39:$A$46, 0))), "Achieving",
+            
+  IF(K6 >= 
+    INDEX($H$39:$H$46, MATCH(J6, $A$39:$A$46, 0)), "Excelling",
+               "Beginning")))),
+   "Age Not Found")
+
+L10: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K10 >= 
+    INDEX($B$39:$B$46, MATCH(J10, $A$39:$A$46, 0)), K10 <= 
+    INDEX($C$39:$C$46, MATCH(J10, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K10 >= 
+    INDEX($D$39:$D$46, MATCH(J10, $A$39:$A$46, 0)), K10 <= 
+    INDEX($E$39:$E$46, MATCH(J10, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K10 >= 
+    INDEX($F$39:$F$46, MATCH(J10, $A$39:$A$46, 0)), K10 <= 
+    INDEX($G$39:$G$46, MATCH(J10, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K10 >= 
+    INDEX($H$39:$H$46, MATCH(J10, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L11: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K11 >= 
+    INDEX($B$39:$B$46, MATCH(J11, $A$39:$A$46, 0)), K11 <= 
+    INDEX($C$39:$C$46, MATCH(J11, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K11 >= 
+    INDEX($D$39:$D$46, MATCH(J11, $A$39:$A$46, 0)), K11 <= 
+    INDEX($E$39:$E$46, MATCH(J11, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K11 >= 
+    INDEX($F$39:$F$46, MATCH(J11, $A$39:$A$46, 0)), K11 <= 
+    INDEX($G$39:$G$46, MATCH(J11, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K11 >= 
+    INDEX($H$39:$H$46, MATCH(J11, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L12: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K12 >= 
+    INDEX($B$39:$B$46, MATCH(J12, $A$39:$A$46, 0)), K12 <= 
+    INDEX($C$39:$C$46, MATCH(J12, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K12 >= 
+    INDEX($D$39:$D$46, MATCH(J12, $A$39:$A$46, 0)), K12 <= 
+    INDEX($E$39:$E$46, MATCH(J12, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K12 >= 
+    INDEX($F$39:$F$46, MATCH(J12, $A$39:$A$46, 0)), K12 <= 
+    INDEX($G$39:$G$46, MATCH(J12, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K12 >= 
+    INDEX($H$39:$H$46, MATCH(J12, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L13: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K13 >= 
+    INDEX($B$39:$B$46, MATCH(J13, $A$39:$A$46, 0)), K13 <= 
+    INDEX($C$39:$C$46, MATCH(J13, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K13 >= 
+    INDEX($D$39:$D$46, MATCH(J13, $A$39:$A$46, 0)), K13 <= 
+    INDEX($E$39:$E$46, MATCH(J13, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K13 >= 
+    INDEX($F$39:$F$46, MATCH(J13, $A$39:$A$46, 0)), K13 <= 
+    INDEX($G$39:$G$46, MATCH(J13, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K13 >= 
+    INDEX($H$39:$H$46, MATCH(J13, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L14: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K14 >= 
+    INDEX($B$39:$B$46, MATCH(J14, $A$39:$A$46, 0)), K14 <= 
+    INDEX($C$39:$C$46, MATCH(J14, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K14 >= 
+    INDEX($D$39:$D$46, MATCH(J14, $A$39:$A$46, 0)), K14 <= 
+    INDEX($E$39:$E$46, MATCH(J14, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K14 >= 
+    INDEX($F$39:$F$46, MATCH(J14, $A$39:$A$46, 0)), K14 <= 
+    INDEX($G$39:$G$46, MATCH(J14, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K14 >= 
+    INDEX($H$39:$H$46, MATCH(J14, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L15: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K15 >= 
+    INDEX($B$39:$B$46, MATCH(J15, $A$39:$A$46, 0)), K15 <= 
+    INDEX($C$39:$C$46, MATCH(J15, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K15 >= 
+    INDEX($D$39:$D$46, MATCH(J15, $A$39:$A$46, 0)), K15 <= 
+    INDEX($E$39:$E$46, MATCH(J15, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K15 >= 
+    INDEX($F$39:$F$46, MATCH(J15, $A$39:$A$46, 0)), K15 <= 
+    INDEX($G$39:$G$46, MATCH(J15, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K15 >= 
+    INDEX($H$39:$H$46, MATCH(J15, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L16: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K16 >= 
+    INDEX($B$39:$B$46, MATCH(J16, $A$39:$A$46, 0)), K16 <= 
+    INDEX($C$39:$C$46, MATCH(J16, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K16 >= 
+    INDEX($D$39:$D$46, MATCH(J16, $A$39:$A$46, 0)), K16 <= 
+    INDEX($E$39:$E$46, MATCH(J16, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K16 >= 
+    INDEX($F$39:$F$46, MATCH(J16, $A$39:$A$46, 0)), K16 <= 
+    INDEX($G$39:$G$46, MATCH(J16, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K16 >= 
+    INDEX($H$39:$H$46, MATCH(J16, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L17: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K17 >= 
+    INDEX($B$39:$B$46, MATCH(J17, $A$39:$A$46, 0)), K17 <= 
+    INDEX($C$39:$C$46, MATCH(J17, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K17 >= 
+    INDEX($D$39:$D$46, MATCH(J17, $A$39:$A$46, 0)), K17 <= 
+    INDEX($E$39:$E$46, MATCH(J17, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K17 >= 
+    INDEX($F$39:$F$46, MATCH(J17, $A$39:$A$46, 0)), K17 <= 
+    INDEX($G$39:$G$46, MATCH(J17, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K17 >= 
+    INDEX($H$39:$H$46, MATCH(J17, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L18: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K18 >= 
+    INDEX($B$39:$B$46, MATCH(J18, $A$39:$A$46, 0)), K18 <= 
+    INDEX($C$39:$C$46, MATCH(J18, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K18 >= 
+    INDEX($D$39:$D$46, MATCH(J18, $A$39:$A$46, 0)), K18 <= 
+    INDEX($E$39:$E$46, MATCH(J18, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K18 >= 
+    INDEX($F$39:$F$46, MATCH(J18, $A$39:$A$46, 0)), K18 <= 
+    INDEX($G$39:$G$46, MATCH(J18, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K18 >= 
+    INDEX($H$39:$H$46, MATCH(J18, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L19: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K19 >= 
+    INDEX($B$39:$B$46, MATCH(J19, $A$39:$A$46, 0)), K19 <= 
+    INDEX($C$39:$C$46, MATCH(J19, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K19 >= 
+    INDEX($D$39:$D$46, MATCH(J19, $A$39:$A$46, 0)), K19 <= 
+    INDEX($E$39:$E$46, MATCH(J19, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K19 >= 
+    INDEX($F$39:$F$46, MATCH(J19, $A$39:$A$46, 0)), K19 <= 
+    INDEX($G$39:$G$46, MATCH(J19, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K19 >= 
+    INDEX($H$39:$H$46, MATCH(J19, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L20: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K20 >= 
+    INDEX($B$39:$B$46, MATCH(J20, $A$39:$A$46, 0)), K20 <= 
+    INDEX($C$39:$C$46, MATCH(J20, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K20 >= 
+    INDEX($D$39:$D$46, MATCH(J20, $A$39:$A$46, 0)), K20 <= 
+    INDEX($E$39:$E$46, MATCH(J20, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K20 >= 
+    INDEX($F$39:$F$46, MATCH(J20, $A$39:$A$46, 0)), K20 <= 
+    INDEX($G$39:$G$46, MATCH(J20, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K20 >= 
+    INDEX($H$39:$H$46, MATCH(J20, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L21: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K21 >= 
+    INDEX($B$39:$B$46, MATCH(J21, $A$39:$A$46, 0)), K21 <= 
+    INDEX($C$39:$C$46, MATCH(J21, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K21 >= 
+    INDEX($D$39:$D$46, MATCH(J21, $A$39:$A$46, 0)), K21 <= 
+    INDEX($E$39:$E$46, MATCH(J21, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K21 >= 
+    INDEX($F$39:$F$46, MATCH(J21, $A$39:$A$46, 0)), K21 <= 
+    INDEX($G$39:$G$46, MATCH(J21, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K21 >= 
+    INDEX($H$39:$H$46, MATCH(J21, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L22: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K22 >= 
+    INDEX($B$39:$B$46, MATCH(J22, $A$39:$A$46, 0)), K22 <= 
+    INDEX($C$39:$C$46, MATCH(J22, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K22 >= 
+    INDEX($D$39:$D$46, MATCH(J22, $A$39:$A$46, 0)), K22 <= 
+    INDEX($E$39:$E$46, MATCH(J22, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K22 >= 
+    INDEX($F$39:$F$46, MATCH(J22, $A$39:$A$46, 0)), K22 <= 
+    INDEX($G$39:$G$46, MATCH(J22, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K22 >= 
+    INDEX($H$39:$H$46, MATCH(J22, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L23: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K23 >= 
+    INDEX($B$39:$B$46, MATCH(J23, $A$39:$A$46, 0)), K23 <= 
+    INDEX($C$39:$C$46, MATCH(J23, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K23 >= 
+    INDEX($D$39:$D$46, MATCH(J23, $A$39:$A$46, 0)), K23 <= 
+    INDEX($E$39:$E$46, MATCH(J23, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K23 >= 
+    INDEX($F$39:$F$46, MATCH(J23, $A$39:$A$46, 0)), K23 <= 
+    INDEX($G$39:$G$46, MATCH(J23, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K23 >= 
+    INDEX($H$39:$H$46, MATCH(J23, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L24: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K24 >= 
+    INDEX($B$39:$B$46, MATCH(J24, $A$39:$A$46, 0)), K24 <= 
+    INDEX($C$39:$C$46, MATCH(J24, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K24 >= 
+    INDEX($D$39:$D$46, MATCH(J24, $A$39:$A$46, 0)), K24 <= 
+    INDEX($E$39:$E$46, MATCH(J24, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K24 >= 
+    INDEX($F$39:$F$46, MATCH(J24, $A$39:$A$46, 0)), K24 <= 
+    INDEX($G$39:$G$46, MATCH(J24, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K24 >= 
+    INDEX($H$39:$H$46, MATCH(J24, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L25: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K25 >= 
+    INDEX($B$39:$B$46, MATCH(J25, $A$39:$A$46, 0)), K25 <= 
+    INDEX($C$39:$C$46, MATCH(J25, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K25 >= 
+    INDEX($D$39:$D$46, MATCH(J25, $A$39:$A$46, 0)), K25 <= 
+    INDEX($E$39:$E$46, MATCH(J25, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K25 >= 
+    INDEX($F$39:$F$46, MATCH(J25, $A$39:$A$46, 0)), K25 <= 
+    INDEX($G$39:$G$46, MATCH(J25, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K25 >= 
+    INDEX($H$39:$H$46, MATCH(J25, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L26: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K26 >= 
+    INDEX($B$39:$B$46, MATCH(J26, $A$39:$A$46, 0)), K26 <= 
+    INDEX($C$39:$C$46, MATCH(J26, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K26 >= 
+    INDEX($D$39:$D$46, MATCH(J26, $A$39:$A$46, 0)), K26 <= 
+    INDEX($E$39:$E$46, MATCH(J26, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K26 >= 
+    INDEX($F$39:$F$46, MATCH(J26, $A$39:$A$46, 0)), K26 <= 
+    INDEX($G$39:$G$46, MATCH(J26, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K26 >= 
+    INDEX($H$39:$H$46, MATCH(J26, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+L27: (Complex, 509 chars)
+  =IFERROR(
+
+  IF(AND(K27 >= 
+    INDEX($B$39:$B$46, MATCH(J27, $A$39:$A$46, 0)), K27 <= 
+    INDEX($C$39:$C$46, MATCH(J27, $A$39:$A$46, 0))), "Beginning",
+
+  IF(AND(K27 >= 
+    INDEX($D$39:$D$46, MATCH(J27, $A$39:$A$46, 0)), K27 <= 
+    INDEX($E$39:$E$46, MATCH(J27, $A$39:$A$46, 0))), "Progressing",
+
+  IF(AND(K27 >= 
+    INDEX($F$39:$F$46, MATCH(J27, $A$39:$A$46, 0)), K27 <= 
+    INDEX($G$39:$G$46, MATCH(J27, $A$39:$A$46, 0))), "Achieving",
+
+  IF(K27 >= 
+    INDEX($H$39:$H$46, MATCH(J27, $A$39:$A$46, 0)), "Excelling",
+"Beginning")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+L40: (Moderate, 33 chars)
+  =COUNT
+  IF(L$5:L$34, "Progressing")
+
+L39: (Moderate, 31 chars)
+  =COUNT
+  IF(L$5:L$34, "Beginning")
+
+L41: (Moderate, 31 chars)
+  =COUNT
+  IF(L$5:L$34, "Achieving")
+
+L42: (Moderate, 31 chars)
+  =COUNT
+  IF(L$5:L$34, "Excelling")
+
+--- SIMPLE FORMULAS (98 total) ---
+J10: ='Class List'!$C10
+J11: ='Class List'!$C11
+J12: ='Class List'!$C12
+J13: ='Class List'!$C13
+J14: ='Class List'!$C14
+
+SHEET: Run
+====================================================================================================
+Total: 129 | Simple: 95 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+I5: (Complex, 350 chars)
+  =IFERROR(
+   
+  IF(H5 <= 
+    INDEX($B$36:$B$46, MATCH(G5, $A$36:$A$46, 0)), "Beginning",
+      
+  IF(H5 <= 
+    INDEX($C$36:$C$46, MATCH(G5, $A$36:$A$46, 0)), "Progressing",
+         
+  IF(H5 <= 
+    INDEX($D$36:$D$46, MATCH(G5, $A$36:$A$46, 0)), "Achieving",
+            
+  IF(H5 >= 
+    INDEX($E$36:$E$46, MATCH(G5, $A$36:$A$46, 0)), "Excelling", "Error")))),
+   "Age Not Found")
+
+I10: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H10 <= 
+    INDEX($B$36:$B$46, MATCH(G10, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H10 <= 
+    INDEX($C$36:$C$46, MATCH(G10, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H10 <= 
+    INDEX($D$36:$D$46, MATCH(G10, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H10 >= 
+    INDEX($E$36:$E$46, MATCH(G10, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I11: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H11 <= 
+    INDEX($B$36:$B$46, MATCH(G11, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H11 <= 
+    INDEX($C$36:$C$46, MATCH(G11, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H11 <= 
+    INDEX($D$36:$D$46, MATCH(G11, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H11 >= 
+    INDEX($E$36:$E$46, MATCH(G11, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I12: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H12 <= 
+    INDEX($B$36:$B$46, MATCH(G12, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H12 <= 
+    INDEX($C$36:$C$46, MATCH(G12, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H12 <= 
+    INDEX($D$36:$D$46, MATCH(G12, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H12 >= 
+    INDEX($E$36:$E$46, MATCH(G12, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I13: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H13 <= 
+    INDEX($B$36:$B$46, MATCH(G13, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H13 <= 
+    INDEX($C$36:$C$46, MATCH(G13, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H13 <= 
+    INDEX($D$36:$D$46, MATCH(G13, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H13 >= 
+    INDEX($E$36:$E$46, MATCH(G13, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I14: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H14 <= 
+    INDEX($B$36:$B$46, MATCH(G14, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H14 <= 
+    INDEX($C$36:$C$46, MATCH(G14, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H14 <= 
+    INDEX($D$36:$D$46, MATCH(G14, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H14 >= 
+    INDEX($E$36:$E$46, MATCH(G14, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I15: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H15 <= 
+    INDEX($B$36:$B$46, MATCH(G15, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H15 <= 
+    INDEX($C$36:$C$46, MATCH(G15, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H15 <= 
+    INDEX($D$36:$D$46, MATCH(G15, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H15 >= 
+    INDEX($E$36:$E$46, MATCH(G15, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I16: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H16 <= 
+    INDEX($B$36:$B$46, MATCH(G16, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H16 <= 
+    INDEX($C$36:$C$46, MATCH(G16, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H16 <= 
+    INDEX($D$36:$D$46, MATCH(G16, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H16 >= 
+    INDEX($E$36:$E$46, MATCH(G16, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I17: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H17 <= 
+    INDEX($B$36:$B$46, MATCH(G17, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H17 <= 
+    INDEX($C$36:$C$46, MATCH(G17, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H17 <= 
+    INDEX($D$36:$D$46, MATCH(G17, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H17 >= 
+    INDEX($E$36:$E$46, MATCH(G17, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I18: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H18 <= 
+    INDEX($B$36:$B$46, MATCH(G18, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H18 <= 
+    INDEX($C$36:$C$46, MATCH(G18, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H18 <= 
+    INDEX($D$36:$D$46, MATCH(G18, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H18 >= 
+    INDEX($E$36:$E$46, MATCH(G18, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I19: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H19 <= 
+    INDEX($B$36:$B$46, MATCH(G19, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H19 <= 
+    INDEX($C$36:$C$46, MATCH(G19, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H19 <= 
+    INDEX($D$36:$D$46, MATCH(G19, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H19 >= 
+    INDEX($E$36:$E$46, MATCH(G19, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I20: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H20 <= 
+    INDEX($B$36:$B$46, MATCH(G20, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H20 <= 
+    INDEX($C$36:$C$46, MATCH(G20, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H20 <= 
+    INDEX($D$36:$D$46, MATCH(G20, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H20 >= 
+    INDEX($E$36:$E$46, MATCH(G20, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I21: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H21 <= 
+    INDEX($B$36:$B$46, MATCH(G21, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H21 <= 
+    INDEX($C$36:$C$46, MATCH(G21, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H21 <= 
+    INDEX($D$36:$D$46, MATCH(G21, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H21 >= 
+    INDEX($E$36:$E$46, MATCH(G21, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I22: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H22 <= 
+    INDEX($B$36:$B$46, MATCH(G22, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H22 <= 
+    INDEX($C$36:$C$46, MATCH(G22, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H22 <= 
+    INDEX($D$36:$D$46, MATCH(G22, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H22 >= 
+    INDEX($E$36:$E$46, MATCH(G22, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I23: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H23 <= 
+    INDEX($B$36:$B$46, MATCH(G23, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H23 <= 
+    INDEX($C$36:$C$46, MATCH(G23, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H23 <= 
+    INDEX($D$36:$D$46, MATCH(G23, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H23 >= 
+    INDEX($E$36:$E$46, MATCH(G23, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I24: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H24 <= 
+    INDEX($B$36:$B$46, MATCH(G24, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H24 <= 
+    INDEX($C$36:$C$46, MATCH(G24, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H24 <= 
+    INDEX($D$36:$D$46, MATCH(G24, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H24 >= 
+    INDEX($E$36:$E$46, MATCH(G24, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I25: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H25 <= 
+    INDEX($B$36:$B$46, MATCH(G25, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H25 <= 
+    INDEX($C$36:$C$46, MATCH(G25, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H25 <= 
+    INDEX($D$36:$D$46, MATCH(G25, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H25 >= 
+    INDEX($E$36:$E$46, MATCH(G25, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I26: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H26 <= 
+    INDEX($B$36:$B$46, MATCH(G26, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H26 <= 
+    INDEX($C$36:$C$46, MATCH(G26, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H26 <= 
+    INDEX($D$36:$D$46, MATCH(G26, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H26 >= 
+    INDEX($E$36:$E$46, MATCH(G26, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I27: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H27 <= 
+    INDEX($B$36:$B$46, MATCH(G27, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H27 <= 
+    INDEX($C$36:$C$46, MATCH(G27, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H27 <= 
+    INDEX($D$36:$D$46, MATCH(G27, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H27 >= 
+    INDEX($E$36:$E$46, MATCH(G27, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I28: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H28 <= 
+    INDEX($B$36:$B$46, MATCH(G28, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H28 <= 
+    INDEX($C$36:$C$46, MATCH(G28, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H28 <= 
+    INDEX($D$36:$D$46, MATCH(G28, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H28 >= 
+    INDEX($E$36:$E$46, MATCH(G28, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+I40: (Moderate, 33 chars)
+  =COUNT
+  IF(I$5:I$34, "Progressing")
+
+I39: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Beginning")
+
+I41: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Achieving")
+
+I42: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Excelling")
+
+--- SIMPLE FORMULAS (95 total) ---
+G10: ='Class List'!$C10
+G11: ='Class List'!$C11
+G12: ='Class List'!$C12
+G13: ='Class List'!$C13
+G14: ='Class List'!$C14
+
+SHEET: Two-handed strike
+====================================================================================================
+Total: 132 | Simple: 98 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+L5: (Complex, 350 chars)
+  =IFERROR(
+   
+  IF(K5 <= 
+    INDEX($B$36:$B$46, MATCH(J5, $A$36:$A$46, 0)), "Beginning",
+      
+  IF(K5 <= 
+    INDEX($C$36:$C$46, MATCH(J5, $A$36:$A$46, 0)), "Progressing",
+         
+  IF(K5 <= 
+    INDEX($D$36:$D$46, MATCH(J5, $A$36:$A$46, 0)), "Achieving",
+            
+  IF(K5 >= 
+    INDEX($E$36:$E$46, MATCH(J5, $A$36:$A$46, 0)), "Excelling", "Error")))),
+   "Age Not Found")
+
+L10: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K10 <= 
+    INDEX($B$36:$B$46, MATCH(J10, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K10 <= 
+    INDEX($C$36:$C$46, MATCH(J10, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K10 <= 
+    INDEX($D$36:$D$46, MATCH(J10, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K10 >= 
+    INDEX($E$36:$E$46, MATCH(J10, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L11: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K11 <= 
+    INDEX($B$36:$B$46, MATCH(J11, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K11 <= 
+    INDEX($C$36:$C$46, MATCH(J11, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K11 <= 
+    INDEX($D$36:$D$46, MATCH(J11, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K11 >= 
+    INDEX($E$36:$E$46, MATCH(J11, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L12: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K12 <= 
+    INDEX($B$36:$B$46, MATCH(J12, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K12 <= 
+    INDEX($C$36:$C$46, MATCH(J12, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K12 <= 
+    INDEX($D$36:$D$46, MATCH(J12, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K12 >= 
+    INDEX($E$36:$E$46, MATCH(J12, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L13: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K13 <= 
+    INDEX($B$36:$B$46, MATCH(J13, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K13 <= 
+    INDEX($C$36:$C$46, MATCH(J13, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K13 <= 
+    INDEX($D$36:$D$46, MATCH(J13, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K13 >= 
+    INDEX($E$36:$E$46, MATCH(J13, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L14: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K14 <= 
+    INDEX($B$36:$B$46, MATCH(J14, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K14 <= 
+    INDEX($C$36:$C$46, MATCH(J14, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K14 <= 
+    INDEX($D$36:$D$46, MATCH(J14, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K14 >= 
+    INDEX($E$36:$E$46, MATCH(J14, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L15: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K15 <= 
+    INDEX($B$36:$B$46, MATCH(J15, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K15 <= 
+    INDEX($C$36:$C$46, MATCH(J15, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K15 <= 
+    INDEX($D$36:$D$46, MATCH(J15, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K15 >= 
+    INDEX($E$36:$E$46, MATCH(J15, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L16: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K16 <= 
+    INDEX($B$36:$B$46, MATCH(J16, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K16 <= 
+    INDEX($C$36:$C$46, MATCH(J16, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K16 <= 
+    INDEX($D$36:$D$46, MATCH(J16, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K16 >= 
+    INDEX($E$36:$E$46, MATCH(J16, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L17: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K17 <= 
+    INDEX($B$36:$B$46, MATCH(J17, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K17 <= 
+    INDEX($C$36:$C$46, MATCH(J17, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K17 <= 
+    INDEX($D$36:$D$46, MATCH(J17, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K17 >= 
+    INDEX($E$36:$E$46, MATCH(J17, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L18: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K18 <= 
+    INDEX($B$36:$B$46, MATCH(J18, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K18 <= 
+    INDEX($C$36:$C$46, MATCH(J18, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K18 <= 
+    INDEX($D$36:$D$46, MATCH(J18, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K18 >= 
+    INDEX($E$36:$E$46, MATCH(J18, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L19: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K19 <= 
+    INDEX($B$36:$B$46, MATCH(J19, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K19 <= 
+    INDEX($C$36:$C$46, MATCH(J19, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K19 <= 
+    INDEX($D$36:$D$46, MATCH(J19, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K19 >= 
+    INDEX($E$36:$E$46, MATCH(J19, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L20: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K20 <= 
+    INDEX($B$36:$B$46, MATCH(J20, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K20 <= 
+    INDEX($C$36:$C$46, MATCH(J20, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K20 <= 
+    INDEX($D$36:$D$46, MATCH(J20, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K20 >= 
+    INDEX($E$36:$E$46, MATCH(J20, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L21: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K21 <= 
+    INDEX($B$36:$B$46, MATCH(J21, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K21 <= 
+    INDEX($C$36:$C$46, MATCH(J21, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K21 <= 
+    INDEX($D$36:$D$46, MATCH(J21, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K21 >= 
+    INDEX($E$36:$E$46, MATCH(J21, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L22: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K22 <= 
+    INDEX($B$36:$B$46, MATCH(J22, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K22 <= 
+    INDEX($C$36:$C$46, MATCH(J22, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K22 <= 
+    INDEX($D$36:$D$46, MATCH(J22, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K22 >= 
+    INDEX($E$36:$E$46, MATCH(J22, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L23: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K23 <= 
+    INDEX($B$36:$B$46, MATCH(J23, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K23 <= 
+    INDEX($C$36:$C$46, MATCH(J23, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K23 <= 
+    INDEX($D$36:$D$46, MATCH(J23, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K23 >= 
+    INDEX($E$36:$E$46, MATCH(J23, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L24: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K24 <= 
+    INDEX($B$36:$B$46, MATCH(J24, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K24 <= 
+    INDEX($C$36:$C$46, MATCH(J24, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K24 <= 
+    INDEX($D$36:$D$46, MATCH(J24, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K24 >= 
+    INDEX($E$36:$E$46, MATCH(J24, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L25: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K25 <= 
+    INDEX($B$36:$B$46, MATCH(J25, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K25 <= 
+    INDEX($C$36:$C$46, MATCH(J25, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K25 <= 
+    INDEX($D$36:$D$46, MATCH(J25, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K25 >= 
+    INDEX($E$36:$E$46, MATCH(J25, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L26: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K26 <= 
+    INDEX($B$36:$B$46, MATCH(J26, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K26 <= 
+    INDEX($C$36:$C$46, MATCH(J26, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K26 <= 
+    INDEX($D$36:$D$46, MATCH(J26, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K26 >= 
+    INDEX($E$36:$E$46, MATCH(J26, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L27: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K27 <= 
+    INDEX($B$36:$B$46, MATCH(J27, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K27 <= 
+    INDEX($C$36:$C$46, MATCH(J27, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K27 <= 
+    INDEX($D$36:$D$46, MATCH(J27, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K27 >= 
+    INDEX($E$36:$E$46, MATCH(J27, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+L28: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(K28 <= 
+    INDEX($B$36:$B$46, MATCH(J28, $A$36:$A$46, 0)), "Beginning",
+
+  IF(K28 <= 
+    INDEX($C$36:$C$46, MATCH(J28, $A$36:$A$46, 0)), "Progressing",
+
+  IF(K28 <= 
+    INDEX($D$36:$D$46, MATCH(J28, $A$36:$A$46, 0)), "Achieving",
+
+  IF(K28 >= 
+    INDEX($E$36:$E$46, MATCH(J28, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+L40: (Moderate, 33 chars)
+  =COUNT
+  IF(L$5:L$34, "Progressing")
+
+L39: (Moderate, 31 chars)
+  =COUNT
+  IF(L$5:L$34, "Beginning")
+
+L41: (Moderate, 31 chars)
+  =COUNT
+  IF(L$5:L$34, "Achieving")
+
+L42: (Moderate, 31 chars)
+  =COUNT
+  IF(L$5:L$34, "Excelling")
+
+--- SIMPLE FORMULAS (98 total) ---
+J10: ='Class List'!$C10
+J11: ='Class List'!$C11
+J12: ='Class List'!$C12
+J13: ='Class List'!$C13
+J14: ='Class List'!$C14
+
+SHEET: Vertical Jump
+====================================================================================================
+Total: 129 | Simple: 95 | Moderate: 4 | Complex: 30
+
+
+--- COMPLEX FORMULAS (30) ---
+
+I5: (Complex, 350 chars)
+  =IFERROR(
+   
+  IF(H5 <= 
+    INDEX($B$36:$B$46, MATCH(G5, $A$36:$A$46, 0)), "Beginning",
+      
+  IF(H5 <= 
+    INDEX($C$36:$C$46, MATCH(G5, $A$36:$A$46, 0)), "Progressing",
+         
+  IF(H5 <= 
+    INDEX($D$36:$D$46, MATCH(G5, $A$36:$A$46, 0)), "Achieving",
+            
+  IF(H5 >= 
+    INDEX($E$36:$E$46, MATCH(G5, $A$36:$A$46, 0)), "Excelling", "Error")))),
+   "Age Not Found")
+
+I10: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H10 <= 
+    INDEX($B$36:$B$46, MATCH(G10, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H10 <= 
+    INDEX($C$36:$C$46, MATCH(G10, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H10 <= 
+    INDEX($D$36:$D$46, MATCH(G10, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H10 >= 
+    INDEX($E$36:$E$46, MATCH(G10, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I11: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H11 <= 
+    INDEX($B$36:$B$46, MATCH(G11, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H11 <= 
+    INDEX($C$36:$C$46, MATCH(G11, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H11 <= 
+    INDEX($D$36:$D$46, MATCH(G11, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H11 >= 
+    INDEX($E$36:$E$46, MATCH(G11, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I12: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H12 <= 
+    INDEX($B$36:$B$46, MATCH(G12, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H12 <= 
+    INDEX($C$36:$C$46, MATCH(G12, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H12 <= 
+    INDEX($D$36:$D$46, MATCH(G12, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H12 >= 
+    INDEX($E$36:$E$46, MATCH(G12, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I13: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H13 <= 
+    INDEX($B$36:$B$46, MATCH(G13, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H13 <= 
+    INDEX($C$36:$C$46, MATCH(G13, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H13 <= 
+    INDEX($D$36:$D$46, MATCH(G13, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H13 >= 
+    INDEX($E$36:$E$46, MATCH(G13, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I14: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H14 <= 
+    INDEX($B$36:$B$46, MATCH(G14, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H14 <= 
+    INDEX($C$36:$C$46, MATCH(G14, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H14 <= 
+    INDEX($D$36:$D$46, MATCH(G14, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H14 >= 
+    INDEX($E$36:$E$46, MATCH(G14, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I15: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H15 <= 
+    INDEX($B$36:$B$46, MATCH(G15, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H15 <= 
+    INDEX($C$36:$C$46, MATCH(G15, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H15 <= 
+    INDEX($D$36:$D$46, MATCH(G15, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H15 >= 
+    INDEX($E$36:$E$46, MATCH(G15, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I16: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H16 <= 
+    INDEX($B$36:$B$46, MATCH(G16, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H16 <= 
+    INDEX($C$36:$C$46, MATCH(G16, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H16 <= 
+    INDEX($D$36:$D$46, MATCH(G16, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H16 >= 
+    INDEX($E$36:$E$46, MATCH(G16, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I17: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H17 <= 
+    INDEX($B$36:$B$46, MATCH(G17, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H17 <= 
+    INDEX($C$36:$C$46, MATCH(G17, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H17 <= 
+    INDEX($D$36:$D$46, MATCH(G17, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H17 >= 
+    INDEX($E$36:$E$46, MATCH(G17, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I18: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H18 <= 
+    INDEX($B$36:$B$46, MATCH(G18, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H18 <= 
+    INDEX($C$36:$C$46, MATCH(G18, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H18 <= 
+    INDEX($D$36:$D$46, MATCH(G18, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H18 >= 
+    INDEX($E$36:$E$46, MATCH(G18, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I19: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H19 <= 
+    INDEX($B$36:$B$46, MATCH(G19, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H19 <= 
+    INDEX($C$36:$C$46, MATCH(G19, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H19 <= 
+    INDEX($D$36:$D$46, MATCH(G19, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H19 >= 
+    INDEX($E$36:$E$46, MATCH(G19, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I20: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H20 <= 
+    INDEX($B$36:$B$46, MATCH(G20, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H20 <= 
+    INDEX($C$36:$C$46, MATCH(G20, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H20 <= 
+    INDEX($D$36:$D$46, MATCH(G20, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H20 >= 
+    INDEX($E$36:$E$46, MATCH(G20, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I21: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H21 <= 
+    INDEX($B$36:$B$46, MATCH(G21, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H21 <= 
+    INDEX($C$36:$C$46, MATCH(G21, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H21 <= 
+    INDEX($D$36:$D$46, MATCH(G21, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H21 >= 
+    INDEX($E$36:$E$46, MATCH(G21, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I22: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H22 <= 
+    INDEX($B$36:$B$46, MATCH(G22, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H22 <= 
+    INDEX($C$36:$C$46, MATCH(G22, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H22 <= 
+    INDEX($D$36:$D$46, MATCH(G22, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H22 >= 
+    INDEX($E$36:$E$46, MATCH(G22, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I23: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H23 <= 
+    INDEX($B$36:$B$46, MATCH(G23, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H23 <= 
+    INDEX($C$36:$C$46, MATCH(G23, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H23 <= 
+    INDEX($D$36:$D$46, MATCH(G23, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H23 >= 
+    INDEX($E$36:$E$46, MATCH(G23, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I24: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H24 <= 
+    INDEX($B$36:$B$46, MATCH(G24, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H24 <= 
+    INDEX($C$36:$C$46, MATCH(G24, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H24 <= 
+    INDEX($D$36:$D$46, MATCH(G24, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H24 >= 
+    INDEX($E$36:$E$46, MATCH(G24, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I25: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H25 <= 
+    INDEX($B$36:$B$46, MATCH(G25, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H25 <= 
+    INDEX($C$36:$C$46, MATCH(G25, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H25 <= 
+    INDEX($D$36:$D$46, MATCH(G25, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H25 >= 
+    INDEX($E$36:$E$46, MATCH(G25, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I26: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H26 <= 
+    INDEX($B$36:$B$46, MATCH(G26, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H26 <= 
+    INDEX($C$36:$C$46, MATCH(G26, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H26 <= 
+    INDEX($D$36:$D$46, MATCH(G26, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H26 >= 
+    INDEX($E$36:$E$46, MATCH(G26, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I27: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H27 <= 
+    INDEX($B$36:$B$46, MATCH(G27, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H27 <= 
+    INDEX($C$36:$C$46, MATCH(G27, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H27 <= 
+    INDEX($D$36:$D$46, MATCH(G27, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H27 >= 
+    INDEX($E$36:$E$46, MATCH(G27, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+I28: (Complex, 325 chars)
+  =IFERROR(
+
+  IF(H28 <= 
+    INDEX($B$36:$B$46, MATCH(G28, $A$36:$A$46, 0)), "Beginning",
+
+  IF(H28 <= 
+    INDEX($C$36:$C$46, MATCH(G28, $A$36:$A$46, 0)), "Progressing",
+
+  IF(H28 <= 
+    INDEX($D$36:$D$46, MATCH(G28, $A$36:$A$46, 0)), "Achieving",
+
+  IF(H28 >= 
+    INDEX($E$36:$E$46, MATCH(G28, $A$36:$A$46, 0)), "Excelling", "Error")))),
+"Age Not Found")
+
+--- MODERATE FORMULAS (4) ---
+
+I40: (Moderate, 33 chars)
+  =COUNT
+  IF(I$5:I$34, "Progressing")
+
+I39: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Beginning")
+
+I41: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Achieving")
+
+I42: (Moderate, 31 chars)
+  =COUNT
+  IF(I$5:I$34, "Excelling")
+
+--- SIMPLE FORMULAS (95 total) ---
+G10: ='Class List'!$C10
+G11: ='Class List'!$C11
+G12: ='Class List'!$C12
+G13: ='Class List'!$C13
+G14: ='Class List'!$C14
